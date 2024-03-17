@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'Nabvar-bg':'rgba(0, 0, 0, 0.511)',
+      }
 
     },
   },
