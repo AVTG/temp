@@ -4,7 +4,7 @@ import image from './assets/AVTG.jpg';
 import { MdOutlinePermPhoneMsg } from "react-icons/md";
 export const SportsPage = () => {
     const location = useLocation();
-    const sportsName = location.pathname.split("/").at(-1);
+    // const sportsName = location.pathname.split("/").at(-1);
     // console.log(sportsName) ;
 
     return (
