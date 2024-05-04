@@ -13,11 +13,17 @@ import Esports from '../../../assets/SportsProgram/Esports.jpg'
 
 
 export const SportsData = [
+    // {
+    //     id: 1 ,
+    //     sportsName: 'Basketball',
+    //     image: BasketBall,
+    // },
     {
         id: 1 ,
-        sportsName: 'Basketball',
-        image: BasketBall,
+        sportsName: 'Badminton',
+        image: Badminton,
     },
+
     {
         id: 2 ,
         sportsName: 'Table Tennis',
@@ -58,18 +64,14 @@ export const SportsData = [
         sportsName: 'Kho-Kho',
         image: KhoKho,
     },
+    
     {
         id: 10 ,
-        sportsName: 'Badminton',
-        image: Badminton,
-    },
-    {
-        id: 11 ,
         sportsName: 'Board Games',
         image: BoardGames,
     },
     {
-        id: 12 ,
+        id: 11 ,
         sportsName: 'E-Sports',
         image: Esports,
     },

@@ -4,16 +4,28 @@ import { SportsProgram } from "./components/SportsProgram";
 import { Facilities } from "./components/Facilities";
 import { EventsAndCompetetion } from "./components/EventsAndCompetetion";
 import { FAQs } from "./components/FAQs";
-
+import { useRef } from "react";
 
 export const Home = () => {
+
+
+    const contentRef = useRef(0);
+    const scrollToContent = () => {
+        if (contentRef.current) {
+            contentRef.current.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
 
     return (
 
 
         // container
         <div className="bg-[#ffffff] w-100% box-border ">
-            <Navbar />
+            {
+                // console.log(SportsProgram.targetRef)
+            }
+            <Navbar scrollToContent={scrollToContent} />
 
             {/* Image  */}
             <div className="w-[100%]overflow-x-hidden relative mb-5">
@@ -76,17 +88,16 @@ export const Home = () => {
 
             {/* facilities */}
             <Facilities />
-            {/* <Fac/> */}
 
 
             {/* sports program */}
-            <SportsProgram />
+            <SportsProgram setContentRef={ref => contentRef.current = ref} />
 
             {/* Events and Competetitions */}
             <EventsAndCompetetion />
 
             {/* Athlete Profiles */}
-            <div className="flex flex-col w-10/12 items-start gap-[3rem] relative bg-[#ffffff] mx-auto my-[4rem]">
+            {/* <div className="flex flex-col w-10/12 items-start gap-[3rem] relative bg-[#ffffff] mx-auto my-[4rem]">
                 <div className="flex flex-col items-start gap-[0.5rem] relative self-stretch w-full flex-[0_0_auto]">
                     <div className="flex items-start  relative w-full mt-[-1.00px] [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.5rem] tracking-[-2.88px] leading-[normal]">
                         Athlete Profiles
@@ -143,7 +154,7 @@ export const Home = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* Photo gallery */}
@@ -208,7 +219,7 @@ export const Home = () => {
             <FAQs />
 
             {/* contact us page */}
-            <div className="flex flex-wrap w-[100%] items-center gap-[48px_48px] p-[120px] relative bg-[#0e0e0e] rounded-[30px] overflow-hidden">
+            {/* <div className="flex flex-wrap w-[100%] items-center gap-[48px_48px] p-[120px] relative bg-[#0e0e0e] rounded-[30px] overflow-hidden">
                 <div className="min-w-[600px] gap-[24px]  flex flex-col items-start relative mx-auto">
                     <div className="flex items-start gap-[10px] relative self-stretch w-full">
                         <div className="relative mt-[-1.00px] [font-family:'Inter',Helvetica] font-black text-[#fffafa] text-[72px] tracking-[-2.88px] leading-[normal]">
@@ -246,7 +257,7 @@ export const Home = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
 

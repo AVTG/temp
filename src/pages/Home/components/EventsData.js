@@ -18,5 +18,29 @@ export const EventsData = [
         date: 'January 20-22, 2023',
         heading: 'Gymkhana Badminton Tournament' ,
         description: 'Show off your badminton skills in the gymkhana badminton tournament. Open to all college students. Date: January 20-22, 2023'
-    }
+    } ,
+    {
+        id: 3 ,
+        date: 'January 20-22, 2023',
+        heading: 'Gymkhana Badminton Tournament' ,
+        description: 'Show off your badminton skills in the gymkhana badminton tournament. Open to all college students. Date: January 20-22, 2023'
+    } ,
+    {
+        id: 3 ,
+        date: 'January 20-22, 2023',
+        heading: 'Gymkhana Badminton Tournament' ,
+        description: 'Show off your badminton skills in the gymkhana badminton tournament. Open to all college students. Date: January 20-22, 2023'
+    } ,
+    {
+        id: 3 ,
+        date: 'January 20-22, 2023',
+        heading: 'Gymkhana Badminton Tournament' ,
+        description: 'Show off your badminton skills in the gymkhana badminton tournament. Open to all college students. Date: January 20-22, 2023'
+    } ,
+    {
+        id: 3 ,
+        date: 'January 20-22, 2023',
+        heading: 'Gymkhana Badminton Tournament' ,
+        description: 'Show off your badminton skills in the gymkhana badminton tournament. Open to all college students. Date: January 20-22, 2023'
+    } ,
 ]
