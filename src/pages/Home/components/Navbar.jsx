@@ -1,10 +1,23 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Hamburger from 'hamburger-react' ;
 
 
+export const Navbar = ({ contentRef }) => {
+  
+  const {pathname} = useLocation() ;
+  const navigate = useNavigate() ;
 
-export const Navbar = ({ scrollToContent }) => {
+  const scrollToContent = async() => {
+    if(pathname !== "/"){
+      await navigate("/") ;
+    }
+
+    console.log(contentRef) ;
+    if (contentRef.current) {
+        contentRef.current.current.scrollIntoView({ behavior: 'smooth' });
+    }
+};
   const handleClick = () => {
     // Scroll to the element using the passed function
     if (scrollToContent) {

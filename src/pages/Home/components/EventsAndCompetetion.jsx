@@ -62,7 +62,7 @@ export const EventsAndCompetetion = () => {
         >
           {
             EventsData.map((currElement) => (
-              <SwiperSlide>
+              <SwiperSlide  key={currElement.id}>
                 <EventsElement key={currElement.id} currElement={currElement} />
               </SwiperSlide>
             ))

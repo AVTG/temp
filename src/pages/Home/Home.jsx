@@ -5,16 +5,17 @@ import { Facilities } from "./components/Facilities";
 import { EventsAndCompetetion } from "./components/EventsAndCompetetion";
 import { FAQs } from "./components/FAQs";
 import { useRef } from "react";
+import Footer from "./components/Footer" ;
 
 export const Home = () => {
 
 
     const contentRef = useRef(0);
-    const scrollToContent = () => {
-        if (contentRef.current) {
-            contentRef.current.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // const scrollToContent = () => {
+    //     if (contentRef.current) {
+    //         contentRef.current.current.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
 
 
     return (
@@ -25,7 +26,7 @@ export const Home = () => {
             {
                 // console.log(SportsProgram.targetRef)
             }
-            <Navbar scrollToContent={scrollToContent} />
+            <Navbar contentRef={contentRef} />
 
             {/* Image  */}
             <div className="w-[100%]overflow-x-hidden relative mb-5">
@@ -259,6 +260,7 @@ export const Home = () => {
                 </div>
             </div> */}
 
+            <Footer/>
         </div>
 
 

@@ -1,9 +1,11 @@
 import { SportsData } from './SportsData'
 import { SportsElement } from './SportsElement'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 export const SportsProgram = ({setContentRef}) => {
     const targetRef = useRef(0);
-    setContentRef(targetRef);
+    useEffect(() => {
+        setContentRef(targetRef);
+    }, [targetRef , setContentRef]) ;
 
 
     return (
