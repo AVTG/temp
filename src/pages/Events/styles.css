@@ -1,0 +1,9 @@
+.card {
+    width: 400px; /* Adjust the width of each card */
+    margin: 10px; /* Add margin between cards */
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    /* animation: fade-in 0.3s forwards; */
+  }
