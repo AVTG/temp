@@ -28,7 +28,7 @@ export const SportsPageElement = ({ object }) => {
                 </div>
 
                 {/* Position Of Responsibility Cards */}
-                <div className="gap-3 items-center justify-center flex lg:flex-wrap">
+                <div className="gap-3 items-center justify-center flex flex-wrap">
                     {
                         object.positions.map((currPosition, index) => {
                             return <SportsPageElementCard key={index + 1} currPosition={currPosition} />
