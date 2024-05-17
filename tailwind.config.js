@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       colors: {
         'Nabvar-bg':'rgba(0, 0, 0, 0.511)',
+      },
+      screens: {
+        'navbar' : '800px' ,
       }
 
     },

@@ -3,6 +3,7 @@ import { EventsElement } from './EventsElement.jsx';
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
 
 // Import Swiper styles
@@ -10,10 +11,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+// import './style.css';
 
-import './style.css';
 
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 
 export const EventsAndCompetetion = () => {
@@ -34,7 +34,10 @@ export const EventsAndCompetetion = () => {
           navigation={window.innerWidth > 500}
           pagination={true}
           mousewheel={true}
-          autoplay={{ delay: 1, disableOnInteraction: true }}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: true,
+          }}
           keyboard={true}
           direction="horizontal"
           breakpoints={{
@@ -57,7 +60,7 @@ export const EventsAndCompetetion = () => {
             },
           }}
     
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard , Autoplay]}
           className="mySwiper"
         >
           {

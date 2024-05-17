@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "../../common/Navbar";
 import { SportsProgram } from "./components/SportsProgram";
 import { Facilities } from "./components/Facilities";
 import { EventsAndCompetetion } from "./components/EventsAndCompetetion";
 import { FAQs } from "./components/FAQs";
 import { useRef } from "react";
-import Footer from "./components/Footer" ;
+import Footer from "../../common/Footer" ;
 
 export const Home = () => {
 

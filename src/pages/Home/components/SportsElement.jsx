@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 export const SportsElement = (props) => {
     return (
-        <NavLink to={`/sports/${props.currElement.sportsName.replaceAll(" " ,"").replaceAll("-" ,"").toLowerCase()}`} className="flex flex-col gap-[1.5rem] items-center justify-center ">
+        <NavLink to={`/sports/${props.currElement.id}`} className="flex flex-col gap-[1.5rem] items-center justify-center ">
             <img
                 className="w-[200px] h-[200px] object-cover"
                 alt="Ellipse"

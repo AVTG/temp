@@ -13,11 +13,6 @@ import Esports from '../../../assets/SportsProgram/Esports.jpg'
 
 
 export const SportsData = [
-    // {
-    //     id: 1 ,
-    //     sportsName: 'Basketball',
-    //     image: BasketBall,
-    // },
     {
         id: 1 ,
         sportsName: 'Badminton',
@@ -41,8 +36,8 @@ export const SportsData = [
     },
     {
         id: 5 ,
-        sportsName: 'Cricket',
-        image: Cricket,
+        sportsName: 'Kabbadi',
+        image: Kabbadi,
     },
     {
         id: 6 ,
@@ -51,8 +46,8 @@ export const SportsData = [
     },
     {
         id: 7 ,
-        sportsName: 'Kabbadi',
-        image: Kabbadi,
+        sportsName: 'Cricket',
+        image: Cricket,
     },
     {
         id: 8 ,
