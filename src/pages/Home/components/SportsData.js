@@ -56,7 +56,7 @@ export const SportsData = [
     },
     {
         id: 9 ,
-        sportsName: 'Kho-Kho',
+        sportsName: 'Martial Arts',
         image: KhoKho,
     },
     

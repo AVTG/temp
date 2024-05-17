@@ -1,8 +1,12 @@
 import image from './assets/AVTG.jpg';
 import badminton1 from './assets/badminton1.jpg' ;
 import Sarthak_Cricket from "./assets/Sarthak_Cricket.jpg" ;
-import Hrithik_Cricket from "./assets/Hrithik_Cricket.jpg"
-
+import Hrithik_Cricket from "./assets/Hrithik_Cricket.jpg" ;
+import paras_kabaddi from "./assets/paras_kabaddi.jpg" ;
+import Himanshu_VollleyBall from "./assets/Himanshu_VollleyBall.jpg" ;
+import Ashutosh_Handball from "./assets/Ashutosh_Handball.jpg" ;
+import Prince_MartialArts from "./assets/Prince_MartialArts.jpg" ;
+import Adarsh_TableTennis from "./assets/Adarsh_TableTennis.jpg"
 
 export const SportsPageData = [
     {
@@ -11,7 +15,7 @@ export const SportsPageData = [
         positions: [
             {
                 name: "Anurag Singh",
-                position: "Secretary",
+                position: "Club-Secretary",
                 image: badminton1,
                 mobno: "9664468638"
             },
@@ -36,10 +40,10 @@ export const SportsPageData = [
         sportsName: 'Table Tennis',
         positions: [
             {
-                name: "AVTG",
-                position: "Vice President",
-                image: image,
-                mobno: "9664468638"
+                name: "Adarsh Srivastava",
+                position: "Club-Secretary",
+                image: Adarsh_TableTennis,
+                mobno: "7651915054"
             },
         ],
 
@@ -122,10 +126,10 @@ export const SportsPageData = [
         sportsName: 'Kabbadi',
         positions: [
             {
-                name: "AVTG",
-                position: "Vice President",
-                image: image,
-                mobno: "9664468638"
+                name: "Paras Rajain",
+                position: "Club-Secretary",
+                image: paras_kabaddi,
+                mobno: "8307659946"
             },
         ],
 
@@ -148,9 +152,9 @@ export const SportsPageData = [
         sportsName: 'Volley Ball',
         positions: [
             {
-                name: "AVTG",
-                position: "Vice President",
-                image: image,
+                name: "Tamarakandi Himanshu",
+                position: "Club-Secretary",
+                image: Himanshu_VollleyBall,
                 mobno: "9664468638"
             },
         ],
@@ -176,7 +180,7 @@ export const SportsPageData = [
         positions: [
             {
                 name: "Sarthak Singh",
-                position: "Vice President",
+                position: "Club Secretary",
                 image: Sarthak_Cricket,
                 mobno: "7651961091"
             },
@@ -212,10 +216,10 @@ export const SportsPageData = [
         sportsName: 'Hand Ball',
         positions: [
             {
-                name: "AVTG",
-                position: "Vice President",
-                image: image,
-                mobno: "9664468638"
+                name: "Ashutosh Sharma",
+                position: "Club_secretary",
+                image: Ashutosh_Handball,
+                mobno: "9694214669"
             },
         ],
 
@@ -226,12 +230,7 @@ export const SportsPageData = [
         },
 
         fields: [
-            {
-                field: ""
-            },
-            {
-                field: ""
-            }
+            
         ]
 
     },
@@ -239,13 +238,13 @@ export const SportsPageData = [
 
     {
         id: 9,
-        sportsName: 'Kho-Kho',
+        sportsName: 'Martial Arts',
         positions: [
             {
-                name: "AVTG",
-                position: "Vice President",
-                image: image,
-                mobno: "9664468638"
+                name: "Prince Sharma",
+                position: "Club-Secretary",
+                image: Prince_MartialArts,
+                mobno: "7206626781"
             },
         ],
 
