@@ -4,8 +4,8 @@ import { SportsData } from './SportsData';
 import Spinner from './Spinner';
 import './Spinner.css';
 import './styles.css';
-import { Navbar } from '../../common/Navbar';
-import Footer from '../../common/Footer';
+import { Navbar } from '../Home/components/Navbar';
+import Footer from '../Home/components/Footer';
 
 const Events = () => {
   const [loading, setLoading] = useState(true);
@@ -20,17 +20,17 @@ const Events = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#e8e8e8]">
+    <div className="flex flex-col min-h-screen bg-[#e8e8e8] overflow-hidden">
       <Navbar />
-      <div className="flex flex-col flex-grow items-center justify-center w-full">
+      <div className="flex flex-col flex-grow items-center justify-center w-full overflow-hidden">
         <div>
-          <h2 className="border-t-8 border-[#0f0f0f] rounded-full text-8xl my-16 px-2 py-1 text-center items-center flex flex-col">Events</h2>
+          <h2 className="border-t-8 border-[#0f0f0f] rounded-full text-8xl my-16 px-2 py-1 text-center items-center flex flex-col overflow-hidden">Events</h2>
         </div>
-        <div className="flex items-center justify-center flex-wrap">
+        <div className="flex items-center justify-center flex-wrap overflow-hidden">
           {loading ? (
             <Spinner />
           ) : (
-            <div className="flex flex-wrap items-center justify-center mx-auto overflow-auto">
+            <div className="flex flex-wrap items-center justify-center mx-auto  overflow-hidden">
               {SportsData.map(event => (
                 <Card
                   key={event.id}
