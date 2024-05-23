@@ -10,12 +10,7 @@ import Footer from "../../common/Footer" ;
 export const Home = () => {
 
 
-    const contentRef = useRef(0);
-    // const scrollToContent = () => {
-    //     if (contentRef.current) {
-    //         contentRef.current.current.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
+    const contentRef = useRef(0) ;
 
 
     return (
@@ -97,65 +92,7 @@ export const Home = () => {
             {/* Events and Competetitions */}
             <EventsAndCompetetion />
 
-            {/* Athlete Profiles */}
-            {/* <div className="flex flex-col w-10/12 items-start gap-[3rem] relative bg-[#ffffff] mx-auto my-[4rem]">
-                <div className="flex flex-col items-start gap-[0.5rem] relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex items-start  relative w-full mt-[-1.00px] [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.5rem] tracking-[-2.88px] leading-[normal]">
-                        Athlete Profiles
-                    </div>
-                    <p className="opacity-60 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.5rem] tracking-[-0.96px] leading-[normal]">
-                        Features profiles of outstanding athletes and sports personalities associated with the college, showcasing
-                        their achievements, awards, and contributions.
-                    </p>
-                </div>
-                <div className="flex-wrap justify-center gap-[4px_4px] self-stretch w-full flex-[0_0_auto] flex items-start relative">
-                    <div className="min-w-[400px] justify-center gap-[12px] p-[24px] flex-1 grow flex flex-col max-w-[610px] items-start relative bg-[#f7f7f7] rounded-[10px] overflow-hidden">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.85rem] tracking-[-1.60px] leading-[normal]">
-                            Champion Athletes
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Discover the stories of our champion athletes who have excelled in their respective sports and brought
-                            glory to our college.
-                        </p>
-                    </div>
-                    <div className="min-w-[400px] justify-center gap-[12px] p-[24px] flex-1 grow flex flex-col max-w-[610px] items-start relative bg-[#f7f7f7] rounded-[10px] overflow-hidden">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.85rem] tracking-[-1.60px] leading-[normal]">
-                            Award-Winning Coaches
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Learn from the best! Get inspired by our award-winning coaches who have trained and mentored athletes to
-                            reach their full potential.
-                        </p>
-                    </div>
-                    <div className="min-w-[400px] justify-center gap-[12px] p-[24px] flex-1 grow flex flex-col max-w-[610px] items-start relative bg-[#f7f7f7] rounded-[10px] overflow-hidden">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.85rem] tracking-[-1.60px] leading-[normal]">
-                            Hall of Fame
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Explore the prestigious Hall of Fame, honoring the legendary athletes who have made a lasting impact on
-                            our college&#39;s sports legacy.
-                        </p>
-                    </div>
-                    <div className="min-w-[400px] justify-center gap-[12px] p-[24px] flex-1 grow flex flex-col max-w-[610px] items-start relative bg-[#f7f7f7] rounded-[10px] overflow-hidden">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.85rem] tracking-[-1.60px] leading-[normal]">
-                            Community Heroes
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Meet our sports personalities who have not only achieved greatness in their sports but also made
-                            significant contributions to the community.
-                        </p>
-                    </div>
-                    <div className="min-w-[400px] justify-center gap-[12px] p-[24px] flex-1 grow flex flex-col max-w-[610px] items-start relative bg-[#f7f7f7] rounded-[10px] overflow-hidden">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.85rem] tracking-[-1.60px] leading-[normal]">
-                            Inspiring Journeys
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Be inspired by the incredible journeys of our athletes, from overcoming obstacles to achieving their
-                            dreams on and off the field.
-                        </p>
-                    </div>
-                </div>
-            </div> */}
+            
 
 
             {/* Photo gallery */}
