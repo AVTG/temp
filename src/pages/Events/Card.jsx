@@ -87,7 +87,7 @@ const Card = ({ eventName, description, image, event }) => {
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
           transition: 'box-shadow 1.2s',
           animation: 'none', // Initial animation set to none
-          // rest of the content of this card is stles.css
+          // rest of the content of this card is in stles.css
         }}
       >
         <div className="hover:shadow-md hover:bg-gray-100 ">
