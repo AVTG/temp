@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faXmark } from '@fortawesome/free-solid-svg-icons';
+import {faXmark } from '@fortawesome/free-solid-svg-icons';
 import logonew from '../../../assets/logonew.png';
 import Sportsbg from '../../../assets/Sportsbg.jpg';
-import SportField from '../../../assets/SportField.jpg';
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import "./style.css";
 export const FacilitiesElement = (props) => {
-  const { currElement } = props;
   const [isActive, setIsActive] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState('url(default-background.jpg)');
 
