@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import "./style.css";
 export const FacilitiesElement = (props) => {
   const [isActive, setIsActive] = useState(false);
-  const [backgroundImage, setBackgroundImage] = useState('url(default-background.jpg)');
+  const backgroundImage = 'url(default-background.jpg)' ;
 
   const toggleModal = () => {
     setIsActive(!isActive);
@@ -51,7 +51,7 @@ export const FacilitiesElement = (props) => {
             <div className='popup_mid flex-col content-center rounded-xl bg-white overflow-auto'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
-              <div className="flex-col justify-between items-center ">
+              <div className="flex-col justify-start items-center ">
                 <div className="flex justify-between items-center">
                   <NavLink to="/" className="flex justify-center items-center space-x-2">
                     <div className="w-[65px] py-2">
