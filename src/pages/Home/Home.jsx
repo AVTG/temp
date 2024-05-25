@@ -31,6 +31,7 @@ export const Home = () => {
                     alt="abcd"
                 />
             </div >
+            <div>hello</div>
 
             {/* About */}
             <div className="flex flex-col  items-start justify-center gap-[48px] w-10/12  bg-[#ffffff] mx-auto mb-[4rem]">
