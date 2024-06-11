@@ -1,4 +1,4 @@
-import { SportsPageElementCard } from "./SportsPageElementCard";
+import {Card } from "../../common/Card";
 
 
 
@@ -31,7 +31,7 @@ export const SportsPageElement = ({ object }) => {
                 <div className="gap-3 items-center justify-center flex flex-wrap">
                     {
                         object.positions.map((currPosition, index) => {
-                            return <SportsPageElementCard key={index + 1} currPosition={currPosition} />
+                            return <Card key={index + 1} currPosition={currPosition} />
                         })
                     }
                 </div>
