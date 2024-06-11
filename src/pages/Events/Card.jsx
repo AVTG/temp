@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Card.css'; // Assuming you save your CSS here
 
 const Card = ({ eventName, description, image, event }) => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -55,7 +56,7 @@ const Card = ({ eventName, description, image, event }) => {
               transition: background-color 0.3s ease-in-out;
             }
             button:hover {
-              background-color: #000;
+              background-color: #333;
             }
           </style>
         </head>
@@ -81,19 +82,25 @@ const Card = ({ eventName, description, image, event }) => {
   return (
     <div className="flex flex-wrap items-center justify-center w-[350px] card-bg m-4 p-4 rounded-[10px] overflow-hidden bg-[#e8e8e8]">
       <div
-        className="card"
+        className="card hover:transform-card transition-all duration-300 ease-in-out" // Updated hover effect
         style={{
           backgroundColor: '#e8e8e8',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
-          transition: 'box-shadow 1.2s',
+          transition: 'box-shadow 1.2s, transform 0.3s ease-in-out', // Added transform transition
           animation: 'none', // Initial animation set to none
-          // rest of the content of this card is in stles.css
         }}
       >
-        <div className="hover:shadow-md hover:bg-gray-100 ">
-          <div>
-            <img src={image} alt="Event" />
-          </div>
+        <div>
+          <figure className="relative overflow-hidden rounded-lg cursor-pointer">
+            <img
+              src={image}
+              alt="Event"
+              className="w-full h-auto transition-transform duration-400 hover:transform-image" // Added zoom effect on hover
+            />
+            <figcaption className="absolute inset-0 flex items-end p-4 text-3xl font-bold bg-black bg-opacity-70 text-white transition-all duration-400">
+              <div>{eventName}</div>
+            </figcaption>
+          </figure>
           <div>
             <h2 className="mb-4 text-3xl font-bold text-black-700">{eventName}</h2>
             <p className="[font-family:'Inter-Regular',Helvetica] font-normal text-black text-[1.5rem] tracking-[-0.96px] leading-[normal]">
