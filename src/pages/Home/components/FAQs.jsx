@@ -1,4 +1,4 @@
-import { FAQDATA } from "./FAQDATA"
+import { Data } from "../../../Data"
 import { FAQElement } from "./FAQElement"
 export const FAQs = () => {
     return (
@@ -9,7 +9,7 @@ export const FAQs = () => {
             <div className="flex-col gap-[15px] self-stretch w-full  flex items-start relative">
 
                 {
-                    FAQDATA.map((currQuestion) => {
+                    Data.HomeData.FAQDATA.map((currQuestion) => {
                         return <FAQElement key={currQuestion.id} currQuestion = {currQuestion} />
                     })
                 }

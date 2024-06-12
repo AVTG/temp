@@ -3,7 +3,7 @@ import Footer from "../../common/Footer";
 // import image from './assets/AVTG.jpg';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { SportsPageData } from "./SportsPageData";
+import {Data} from "../../Data"
 import { SportsPageElement } from "./SportsPageElement";
 
 
@@ -31,7 +31,7 @@ export const SportsPage = () => {
         id = location.pathname.split("/").at(-1);
     }
 
-    let object = SportsPageData.find(obj => obj.id === Number(id));
+    let object = Data.SportsData.find(obj => obj.id === Number(id));
 
     return (
 

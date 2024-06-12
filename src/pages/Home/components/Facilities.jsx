@@ -1,4 +1,4 @@
-import { FacilitiesData } from './FacilitiesData.js'
+import { Data } from '../../../Data.js';
 import { FacilitiesElement } from './FacilitiesElement.jsx'
 
 export const Facilities = () => {
@@ -21,7 +21,7 @@ export const Facilities = () => {
 
             <div className="flex items-center justify-center flex-wrap gap-[50px] w-10/12">
                 {
-                    FacilitiesData.map( (currElement) => {
+                    Data.HomeData.FacilitiesData.map( (currElement) => {
                         return <FacilitiesElement key = {currElement.id} currElement = {currElement}/>
                     })
                 }

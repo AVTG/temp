@@ -18,9 +18,6 @@ export const Home = () => {
 
         // container
         <div className="bg-[#ffffff] w-100% box-border ">
-            {
-                // console.log(SportsProgram.targetRef)
-            }
             <Navbar contentRef={contentRef} />
 
             {/* Image  */}

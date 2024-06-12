@@ -49,19 +49,19 @@ export const Navbar = ({ contentRef }) => {
 
 
       <div className="hidden  navbar:inline-flex items-center justify-center gap-[1rem] relative ">
-        <NavLink className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" to="/">
+        <NavLink to="/" className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" >
           Home
         </NavLink>
         {/* <NavLink className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" to="/About">
           About
         </NavLink> */}
-        <NavLink className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold  text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" to="/OfficeBearer">
+        <NavLink to="/OfficeBearer" className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold  text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap">
           Office Bearers
         </NavLink>
         <NavLink to="/" onClick={handleClick} className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap hover:cursor-pointer " >
           Sports
         </NavLink>
-        <NavLink className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold  text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" to="/Events">
+        <NavLink to="/Events" className="relative w-fit [font-family:'Montserrat',Helvetica] font-semibold  text-[1.4rem] tracking-[-1.5px] leading-[28px] whitespace-nowrap" >
           Events
         </NavLink>
       </div>
@@ -75,7 +75,6 @@ export const Navbar = ({ contentRef }) => {
           <li className="py-1 [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.2rem] tracking-[-1.5px]">
             <NavLink to="/">
               Home
-
             </NavLink>
           </li>
           {/* <li className="py-1 [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.2rem] tracking-[-1.5px] ">
@@ -84,7 +83,7 @@ export const Navbar = ({ contentRef }) => {
             </NavLink>
           </li> */}
           <li className="py-1 [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.2rem] tracking-[-1.5px]">
-            <NavLink to="/Office-Bearers">
+            <NavLink to="/OfficeBearer">
               Office Bearers
             </NavLink>
           </li>

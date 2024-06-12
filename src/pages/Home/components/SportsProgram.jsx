@@ -1,4 +1,4 @@
-import { SportsData } from './SportsData'
+import { Data } from '../../../Data';
 import { SportsElement } from './SportsElement'
 import { useEffect, useRef } from 'react'
 export const SportsProgram = ({setContentRef}) => {
@@ -22,9 +22,11 @@ export const SportsProgram = ({setContentRef}) => {
             </div>
 
 
-            <div className="flex flex-wrap items-center justify-center gap-[4rem] relative overflow-x-hidden mb-[6rem]">
+            <div className="flex flex-wrap items-center justify-center gap-[4rem] relative overflow-x-hidden mb-[6rem] w-[100%]">
                 {
-                    SportsData.map((currElement) => {
+                    Data.SportsData.filter(object => {
+                        return object.id > 0 
+                    }).map((currElement) => {
                         return <SportsElement key={currElement.id} currElement={currElement} />
                     })
                 }

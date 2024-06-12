@@ -1,4 +1,5 @@
-import { EventsData } from "./EventsData";
+// import { EventsData } from "./EventsData";
+import { Data } from "../../../Data.js";
 import { EventsElement } from './EventsElement.jsx';
 
 
@@ -61,10 +62,9 @@ export const EventsAndCompetetion = () => {
           }}
     
           modules={[Navigation, Pagination, Mousewheel, Keyboard , Autoplay]}
-          className="mySwiper"
         >
           {
-            EventsData.map((currElement) => (
+            Data.HomeData.EventsData.map((currElement) => (
               <SwiperSlide  key={currElement.id}>
                 <EventsElement key={currElement.id} currElement={currElement} />
               </SwiperSlide>
