@@ -1,10 +1,8 @@
-import React, {  useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faXmark } from '@fortawesome/free-solid-svg-icons';
+import React, {useState, useEffect } from "react";
 import logonew from '../../../assets/logonew.png';
 import Sportsbg from '../../../assets/Sportsbg.jpg';
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { FaXmark } from "react-icons/fa6";
 import "./style.css";
 export const FacilitiesElement = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -82,7 +80,7 @@ export const FacilitiesElement = (props) => {
                     </div>
                   </NavLink>
                   <div>
-                    <button className="border-2 px-4 font-bold text-[1.5rem]" onClick={closeModal}> <FontAwesomeIcon icon={faXmark} /></button>
+                    <button className="border-2 px-4 font-bold text-[1.5rem]" onClick={closeModal}> <FaXmark /></button>
                   </div>
                 </div>
                 <div>
