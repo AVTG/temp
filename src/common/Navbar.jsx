@@ -31,18 +31,19 @@ export const Navbar = ({ contentRef }) => {
 
   return (
     <div
-      className={`flex items-center sticky  w-[100%] justify-evenly z-50 bg-Nabvar-bg text-white  backdrop-blur-sm bg-black max-h-min `}
+      className={`flex items-center sticky  w-[100%] justify-evenly z-50 ${pathname !== "/" ? " bg-[#F9EFDB] text-black" :
+         " bg-black text-white"}  backdrop-blur-sm  max-h-min`}
     >
 
       <NavLink to="/" className="flex justify-center items-center space-x-2">
         <div className="w-[55px] py-2">
           <img src={logonew} alt="logo" />
         </div>
-        <div className="relative min-w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-[#fffcfc]  text-[1.3rem] text-center leading-[19px] flex-col space-y-1" >
+        <div className={`relative min-w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold ${pathname !== "/" ? "text-black" : "text-[#fffcfc]"} text-[#fffcfc]  text-[1.3rem] text-center leading-[19px] flex-col space-y-1`} >
           <div className="font-bold">
             SPORTS BOARD
           </div>
-          <div className="w-[100%] border-white border"/>
+          <div className={`w-[100%] ${pathname !== "/" ? "border-black" : "border-white"}  border`} />
           <div className="font-semibold text-[1.1rem] tracking-[1.5px]">IIIT BHAGALPUR</div>
         </div>
       </NavLink>
@@ -71,7 +72,7 @@ export const Navbar = ({ contentRef }) => {
           aria-haspopup="true" />
 
 
-        <ul className={`absolute  bg-white bg-opacity-90 px-6 right-0 text-black  text-opacity-75 py-1 transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'} `}>
+        <ul className={`absolute  bg-white bg-opacity-100 px-6 right-0 text-black  text-opacity-75 py-1 transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'} `}>
           <li className="py-1 [font-family:'Montserrat',Helvetica] font-semibold text-lightgray text-[1.2rem] tracking-[-1.5px]">
             <NavLink to="/">
               Home

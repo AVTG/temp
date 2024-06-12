@@ -1,14 +1,62 @@
-import {Card } from "../../common/Card";
+import { Card } from "../../common/Card";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 export const SportsPageElement = ({ object }) => {
 
     return (
         <div className="w-[100%] bg-[#e8e8e8] space-y-9 ">
+            <div className="flex flex-wrap items-center relative justify-center w-[95%] self-center overflow-hidden mx-auto mt-[2rem]">
+                <Swiper
+                    navigation={window.innerWidth > 500}
+                    pagination={true}
+                    mousewheel={true}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: true,
+                    }}
+                    keyboard={true}
+                    direction="horizontal"
+
+                    modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+                    className="mySwiper w-[100%]" >
+                    <SwiperSlide>
+                        <div className="w-[100%] h-[500px] bg-white border-black border-1">
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="w-[100%] h-[500px] bg-white border-black border-1">
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="w-[100%] h-[500px] bg-white border-black border-1">
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="w-[100%] h-[500px] bg-white border-black border-1">
+
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="w-[100%] h-[500px] bg-white border-black border-1">
+
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
             <div className={`w-11/12 mx-auto space-y-5 flex flex-col lg:flex-row lg:gap-10 lg:space-y-0 justify-center gap-3 ${object.positions.length > 1 ? "" : "md:flex-row"}`}>
                 {/* tenet */}
-                <div className={`flex-col items-start ${object.positions.length > 1 ? "lg:max-w-[50%] " : "lg:max-w-[65%] " } space-y-3`}>
+                <div className={`flex-col items-start ${object.positions.length > 1 ? "lg:max-w-[50%] " : "lg:max-w-[65%] "} space-y-3`}>
                     <div className="  [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2rem] tracking-[-2.88px] leading-[normal] ">
                         Tenet
                     </div>
