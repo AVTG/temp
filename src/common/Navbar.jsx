@@ -39,12 +39,12 @@ export const Navbar = ({ contentRef }) => {
         <div className="w-[55px] py-2">
           <img src={logonew} alt="logo" />
         </div>
-        <div className={`relative min-w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold ${pathname !== "/" ? "text-black" : "text-[#fffcfc]"} text-[#fffcfc]  text-[1.3rem] text-center leading-[19px] flex-col space-y-1`} >
+        <div className={`relative min-w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold ${pathname !== "/" ? "text-black" : "text-[#fffcfc]"} text-[#fffcfc]  text-[1.3rem] text-center leading-[19px] space-y-1 flex-col items-center justify-center`} >
           <div className="font-bold">
             SPORTS BOARD
           </div>
           <div className={`w-[100%] ${pathname !== "/" ? "border-black" : "border-white"}  border`} />
-          <div className="font-semibold text-[1.1rem] tracking-[1.5px]">IIIT BHAGALPUR</div>
+          <div className="font-semibold text-[1.1rem] tracking-[1.5px] text-center">IIIT BHAGALPUR</div>
         </div>
       </NavLink>
 

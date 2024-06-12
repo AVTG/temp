@@ -13,6 +13,7 @@ export const SportsPageElement = ({ object }) => {
 
     return (
         <div className="w-[100%] bg-[#e8e8e8] space-y-9 ">
+            <div className=" mx-auto text-center [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] self-start">{object.sportsName + " Club at IIITBH"}</div>
             <div className="flex flex-wrap items-center relative justify-center w-[95%] self-center overflow-hidden mx-auto mt-[2rem]">
                 <Swiper
                     navigation={window.innerWidth > 500}

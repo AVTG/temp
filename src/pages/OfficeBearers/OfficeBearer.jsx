@@ -9,7 +9,7 @@ export const OfficeBearer = () => {
             <Navbar />
             <div className="w-11/12 mx-auto flex-col space-y-14">
                 <div className="flex-col space-y-5 items-center">
-                    <div className="  [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] text-center">Office Bearers </div>
+                    <div className="  [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] text-center">Office Bearers</div>
 
                     <div className="flex flex-wrap gap-5 justify-center">
                         {Data.SportsData[0].positions.map((currPosition, index) => {
