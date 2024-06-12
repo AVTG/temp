@@ -5,12 +5,47 @@ import { Facilities } from "./components/Facilities";
 import { EventsAndCompetetion } from "./components/EventsAndCompetetion";
 import { FAQs } from "./components/FAQs";
 import { useRef } from "react";
-import Footer from "../../common/Footer" ;
+import Footer from "../../common/Footer";
+import Gymnass from '../../assets/Gymnass.jpg';
+import Indoor from '../../assets/Sportsbg.jpg';
+import logo from '../../assets/logonew.png';
+import 'react-slideshow-image/dist/styles.css';
+import { Slide } from 'react-slideshow-image';
+import "../Home/components/style.css";
+import { useState, useEffect } from "react";
 
 export const Home = () => {
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
+    const [isReadMore, setIsReadMore] = useState(false);
 
-    const contentRef = useRef(0) ;
+    const contentRef = useRef(0);
+
+    const SlideImages = [
+        { img: Gymnass },
+        { img: Indoor },
+        { img: logo },
+    ];
+
+    const toggleReadMore = () => {
+        setIsReadMore(!isReadMore);
+    };
+
+    const description = ` We turn novices into champions here at IIT Delhi grounds. The best facilities provided by us have led to great results
+                            and our presence is now being felt in the Delhi circles as well as in the inter-college meets outside. As an
+                            organization, we are a group of around 300 people including players, coaches, trainers, and administrative staff who are
+                            working to take our sporting standards at par with the best in the business. Apart from being the apex body for sports in IITD,
+                            we are involved in a number of social events, informal events, hosting sports tournaments, and other collaborations and
+                            therefore the number of people involved with BSA is huge.`
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 850);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
 
     return (
@@ -30,52 +65,45 @@ export const Home = () => {
             </div >
 
             {/* About */}
-            <div className="flex flex-col  items-start justify-center gap-[48px] w-10/12  bg-[#ffffff] mx-auto mb-[4rem]">
-                <div className="flex flex-col items-center gap-[0.5rem]">
+            <div className="md:flex flex-col items-start justify-center gap-[48px] mx-50 bg-[#ffffff] mx-auto mb-[4rem]">
+                <div className="gap-[1.5rem] md:flex justify-between w-full border-solid border-0 ">
+                    <div className="w-2/5 items-center m-auto h-full about-slide">
+                        <Slide>
+                            {SlideImages.map((image, index) => (
+                                <div key={index} className="each-fade">
+                                    <div className="image-container w-[80%] h-[300px] overflow-hidden object-fit pl-1 m-auto rounded-lg">
+                                        <img src={image.img} alt={`slide-${index}`} className="object-cover" />
+                                    </div>
+                                </div>
+                            ))}
+                        </Slide>
+                    </div>
+                    <div className="md:w-3/5 about-cont ">
+                        <h1 className="[font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] underline px-5">About Us</h1>
+                        <p className="p-5 opacity-70 text-black text-[1.5rem] tracking-[-0.96px] leading-[normal] self-start">
 
-                    <div className="  [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] self-start">
-                        About
-                    </div>
-                    <p className="opacity-60  [font-family:'Inter',Helvetica] font-normal text-black text-[1.5rem] tracking-[-0.96px] leading-[normal] self-start">
-                        Provides a brief introduction to the college sports and gymkhana, highlighting its history, facilities, and
-                        achievements.
-                    </p>
-                </div>
-                <div className="justify-center gap-[1.5rem] flex flex-wrap self-center ">
-                    <div className="min-w-[200px] gap-[12px] p-[2.2rem] flex flex-col max-w-[310px] items-start justify-start  rounded-[10px] overflow-hidden bg-[#F9EFDB]">
-                        <div className=" mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.7rem] tracking-[-1.60px] leading-[normal]">
-                            History
-                        </div>
-                        <p className="opacity-50  [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Discover the rich history of our college sports and gymkhana, spanning over decades.
-                        </p>
-                    </div>
-                    <div className="min-w-[200px] gap-[12px] p-[2.2rem] flex flex-col max-w-[310px] items-start justify-start rounded-[10px] overflow-hidden bg-[#F9EFDB]">
-                        <div className="relative self-stretch mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.7rem] tracking-[-1.60px] leading-[normal]">
-                            Achievements
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Learn about the remarkable achievements of our college sports teams and individual athletes.
-                        </p>
-                    </div>
-                    <div className="min-w-[200px] justify-start gap-[12px] p-[2.2rem]  flex flex-col max-w-[310px] items-start  rounded-[10px] bg-[#F9EFDB]">
-                        <div className=" mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.7rem] tracking-[-1.60px] leading-[normal]">
-                            Events
-                        </div>
-                        <p className="opacity-50 [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Stay updated with the latest sports events and competitions happening at our college.
-                        </p>
-                    </div>
-                    <div className="min-w-[200px] justify-start gap-[12px] p-[2.2rem]  flex flex-col max-w-[310px] items-start  bg-[#F9EFDB] rounded-[10px]">
-                        <div className=" mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-black text-[1.7rem] tracking-[-1.60px] leading-[normal]">
-                            Facilities
-                        </div>
-                        <p className="opacity-50 relative self-stretch [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal]">
-                            Explore our state-of-the-art facilities that cater to a wide range of sports and activities.
+                            {isMobile ? (
+                                isReadMore ? description : `${description.substring(0, 500)}....`
+                            ) : (
+                                description
+                            )}
+                            {isMobile && (
+                                <span
+                                    style={{
+                                        color: '#12b8c8',
+                                        textTransform: 'capitalize',
+                                        cursor: 'pointer',
+                                    }}
+                                    onClick={toggleReadMore}
+                                >
+                                    {isReadMore ? ' show less' : ' read more'}
+                                </span>
+                            )}
+
+
                         </p>
                     </div>
                 </div>
-
             </div>
 
 
@@ -89,7 +117,7 @@ export const Home = () => {
             {/* Events and Competetitions */}
             <EventsAndCompetetion />
 
-            
+
 
 
             {/* Photo gallery */}
@@ -194,7 +222,7 @@ export const Home = () => {
                 </div>
             </div> */}
 
-            <Footer/>
+            <Footer />
         </div>
 
 
