@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faXmark } from '@fortawesome/free-solid-svg-icons';
 import logonew from '../../../assets/logonew.png';
 import Sportsbg from '../../../assets/Sportsbg.jpg';
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "./style.css";
 export const FacilitiesElement = (props) => {
   const [isActive, setIsActive] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
+  const [isReadMore, setIsReadMore] = useState(false);
   const backgroundImage = 'url(default-background.jpg)' ;
 
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  
   const toggleModal = () => {
     setIsActive(!isActive);
   };
@@ -26,6 +33,15 @@ export const FacilitiesElement = (props) => {
       document.body.style.overflow = 'auto';
     };
   }, [isActive]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 850);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div
@@ -48,7 +64,7 @@ export const FacilitiesElement = (props) => {
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
-            <div className='popup_mid flex-col content-center rounded-xl bg-white overflow-auto'
+            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="flex-col justify-start items-center ">
@@ -69,20 +85,36 @@ export const FacilitiesElement = (props) => {
                     <button className="border-2 px-4 font-bold text-[1.5rem]" onClick={closeModal}> <FontAwesomeIcon icon={faXmark} /></button>
                   </div>
                 </div>
-                 
-                  <div className="content">
-                    <div>
+                <div>
                       <h4 className="[font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] flex justify-center">
                         {props.currElement.FacilityTitle}
                       </h4>
                     </div>
+                  <div className="content">
+                   
                     <div className="imgdes flex">
-                    <div className="image-container md:flex">
+                    <div className="image-container md:flex md:w-1/4 w-[60%] mx-auto my-6 ">
                     <img src={props.currElement.FacilityBg} alt="Sports Field" className="fascilityimage"/>
                   </div>               
-                    <div className="flex justify-center items-center">
+                    <div className="md:w-3/4 ">
                       <p className="opacity-60 [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal] m-2">
-                        {props.currElement.description}
+                      {isMobile ? (
+                        isReadMore ? props.currElement.description : `${props.currElement.description.substring(0, 500)}....`
+                      ) : (
+                        props.currElement.description
+                      )}
+                      {isMobile && (
+                        <span
+                          style={{
+                            color: '#12b8c8',
+                            textTransform: 'capitalize',
+                            cursor: 'pointer',
+                          }}
+                          onClick={toggleReadMore}
+                        >
+                          {isReadMore ? ' show less' : ' read more'}
+                        </span>
+                      )}
                       </p>
                     </div>
                   </div>
