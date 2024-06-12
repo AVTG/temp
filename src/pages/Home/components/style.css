@@ -57,7 +57,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background */
     z-index: 1000; /* on top of other elements */
-    transition: opacity 30s ease, visibility 0.3s ease;
+   
     opacity: 0;
     visibility: hidden;
   }
@@ -66,25 +66,35 @@
     display: flex;
     opacity: 1;
     visibility: visible;
+    transition: opacity 30s ease, visibility 30s ease-in-out;
   }
-  .fascilityimage{
-    width: 2500px;
-    margin-right: 20px;
-    display: inline;
-    /* margin-top: 50%; */
-    margin-right: 30px;
+  .fascilityimage {
+    width: 100%; /* Adjust to fit the container */
+    max-width: 100%; /* Ensure it does not exceed the container's width */
+    /* height: auto;  Maintain aspect ratio  */
+    margin-right: 0; /* Remove unnecessary margin */
+    display: block; /* Ensure proper layout within flex containers */
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    aspect-ratio: 1/1;
-    /* height: 300px; */
     object-fit: cover;
+    aspect-ratio: 1/1; /* Maintain 1:1 aspect ratio */
   }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .imgdes {
       display: inline;
       /* width: 500px; */
       height: 300px;
       margin-top: 295px;
+    }
+    .about-slide{
+      width: 100%;
+      margin-top: 30px;
+      display: block;
+    }
+    .about-cont{
+      width: 100%;
+      margin-top: 25px;
+      
     }
   }
