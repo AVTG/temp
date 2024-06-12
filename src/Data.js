@@ -5,7 +5,7 @@ import Gymnassium from './assets/Facilities/Gymnassium.png'
 import IndoorArena from './assets/Facilities/IndoorArenas.png'
 import SportsField from './assets/Facilities/SportsField.png'
 import SportField from './assets/SportField.jpg'
-import Gymnass from './assets/Gymnass.jpg'
+import Gymnass from './assets/Gym.jpg'
 import Indoor from './assets/Indoor.jpg' ;
 import E_sports from './assets/E_sports.jpg' ;
 
@@ -23,10 +23,9 @@ import BoardGames from './assets/SportsProgram/BoardGames.jpg' ;
 import ESports from './assets/SportsProgram/EsportsSportsProgram.jpg' ;
 
 
-//SportsData
+
 // Position of Responsibilities Images
 import facultyInCharge from './assets/OfficeBearer_SportsPage/24_facultyinCharge.jpg';
-import General_Secretary from './assets/OfficeBearer_SportsPage/24_GS.jpg';
 import image from './assets/OfficeBearer_SportsPage/AVTG.jpg';
 import badminton1 from './assets/OfficeBearer_SportsPage/badminton1.jpg';
 import Sarthak_Cricket from "./assets/OfficeBearer_SportsPage/Sarthak_Cricket.jpg";
@@ -36,56 +35,6 @@ import Himanshu_VollleyBall from "./assets/OfficeBearer_SportsPage/Himanshu_Voll
 import Ashutosh_Handball from "./assets/OfficeBearer_SportsPage/Ashutosh_Handball.jpg";
 import Prince_MartialArts from "./assets/OfficeBearer_SportsPage/Prince_MartialArts.jpg";
 import Adarsh_TableTennis from "./assets/OfficeBearer_SportsPage/Adarsh_TableTennis.jpg";
-import Siddharth_Football from "./assets/OfficeBearer_SportsPage/Siddharth_Football.jpg" ;
-import Shivam_Athletics from "./assets/OfficeBearer_SportsPage/Shivam_Athletics.jpg" ;
-import Praneeth_Kabaddi from "./assets/OfficeBearer_SportsPage/Praneeth_Kabaddi.jpg" ;
-
-
-//Sports Image
-//football
-import Football1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football1.jpg" ;
-import Football2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football2.jpg" ;
-import Football3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football3.jpg" ;
-import Football4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football4.jpg" ;
-import Football5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football5.jpg" ;
-import Football6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football6.jpg" ;
-
-//Handball
-import Handball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball1.JPG" ;
-import Handball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball2.JPG" ;
-import Handball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball3.JPG" ;
-import Handball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball4.JPG" ;
-import Handball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball5.JPG" ;
-import Handball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball6.JPG" ;
-
-//Volleyball
-import Volleyball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball1.JPG" ;
-import Volleyball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball2.JPG" ;
-import Volleyball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball3.JPG" ;
-import Volleyball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball4.JPG" ;
-import Volleyball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball5.JPG" ;
-import Volleyball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball6.JPG" ;
-
-
-//Kabaddi
-import Kabaddi1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi1.JPG" ;
-import Kabaddi2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi2.JPG" ;
-import Kabaddi3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi3.JPG" ;
-import Kabaddi4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi4.JPG" ;
-import Kabaddi5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi5.JPG" ;
-import Kabaddi6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi6.JPG" ;
-
-//Board Games
-import BoardGames1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames1.JPG" ;
-import BoardGames2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames2.JPG" ;
-import BoardGames3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames3.JPG" ;
-import BoardGames4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames4.JPG" ;
-import BoardGames5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames5.JPG" ;
-import BoardGames6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames6.JPG" ;
-
-
-
-
 
 export const Data = {
     HomeData: {
@@ -198,48 +147,28 @@ export const Data = {
 
     SportsData: [
         {
-            id: -1,
+            id: 0,
             Heading: "Office Bearers",
             sportsName: '',
             positions: [
                 {
                     name: "Dr. Himadri Nayak",
-                    position: "Faculty-in-Charge",
+                    position: "Faculty-in-Charge Sports Board",
                     image: facultyInCharge,
                     mobno: "7632995210"
                 },
-            ],
-        },
-        {
-            id: 0,
-            Heading: "Office Bearers",
-            sportsName: '',
-            positions: [
-
                 {
                     name: "Akshat Tyagi",
-                    position: "General Secretary",
-                    image: General_Secretary,
+                    position: "General Secretary Sports Board",
+                    image: facultyInCharge,
                     mobno: "8287018871",
                 },
                 {
                     name: "Satyam Kumar Sahani",
-                    position: "UG Boys Nominee",
+                    position: "Nominee Sports Board",
                     image: facultyInCharge,
                     mobno: "9454343506"
-                },
-                {
-                    name: "Bhavika vishnoi",
-                    position: "UG Girls Nominee",
-                    image: facultyInCharge,
-                    mobno: "8209259941"
-                },
-                {
-                    name: "Mithlesh Mandal",
-                    position: "PG Nominee",
-                    image: facultyInCharge,
-                    mobno: "9771806000"
-                },
+                }
             ],
         },
 
@@ -304,17 +233,15 @@ export const Data = {
             id: 3,
             sportsName: 'Foot Ball',
             image: Football,
-            SportsImage:{Football1, Football2, Football3, Football4, Football5, Football6}, 
 
             positions: [
                 {
-                    name: "Siddhartha Arya",
-                    position: "Secretary",
-                    image: Siddharth_Football,
-                    mobno: "8638247075"
+                    name: "AVTG",
+                    position: "Vice President",
+                    image: image,
+                    mobno: "9664468638"
                 },
             ],
-
 
             tenet: {
                 Quote: "You have to fight to reach your dream. You have to sacrifice and work hard for it.",
@@ -337,10 +264,10 @@ export const Data = {
             image: Athletics,
             positions: [
                 {
-                    name: "Shivam Thakre",
-                    position: "Secretary",
-                    image: Shivam_Athletics,
-                    mobno: "9404499042"
+                    name: "AVTG",
+                    position: "Vice President",
+                    image: image,
+                    mobno: "9664468638"
                 },
             ],
 
@@ -366,20 +293,12 @@ export const Data = {
             id: 5,
             sportsName: 'Kabbadi',
             image: Kabbadi,
-            SportsImage:{Kabaddi1, Kabaddi2, Kabaddi3, Kabaddi4, Kabaddi5, Kabaddi6}, 
-
             positions: [
                 {
                     name: "Paras Rajain",
                     position: "Club-Secretary",
                     image: paras_kabaddi,
                     mobno: "8307659946"
-                },
-                {
-                    name: "Praneeth Akula",
-                    position: "Club-Secretary",
-                    image: Praneeth_Kabaddi,
-                    mobno: "8688877341"
                 },
             ],
 
@@ -401,14 +320,12 @@ export const Data = {
             id: 6,
             sportsName: 'Volley Ball',
             image: VolleyBall,
-            SportsImage:{Volleyball1, Volleyball2, Volleyball3, Volleyball4, Volleyball5, Volleyball6}, 
-
             positions: [
                 {
                     name: "Tamarakandi Himanshu",
                     position: "Club-Secretary",
                     image: Himanshu_VollleyBall,
-                    mobno: "7205946730"
+                    mobno: "9664468638"
                 },
             ],
 
@@ -468,8 +385,6 @@ export const Data = {
             id: 8,
             sportsName: 'Hand Ball',
             image: HandBall,
-            SportsImage:{Handball1, Handball2, Handball3, Handball4, Handball5, Handball6}, 
-
             positions: [
                 {
                     name: "Ashutosh Sharma",
@@ -525,14 +440,12 @@ export const Data = {
             id: 10,
             sportsName: 'Board Games',
             image: BoardGames,
-            SportsImage:{BoardGames1, BoardGames2, BoardGames3, BoardGames4, BoardGames5, BoardGames6}, 
-
             positions: [
                 {
-                    name: "Saurabh Kotavade",
-                    position: "Secretary",
+                    name: "AVTG",
+                    position: "Vice President",
                     image: image,
-                    mobno: "9307124243"
+                    mobno: "9664468638"
                 },
             ],
 
@@ -557,10 +470,10 @@ export const Data = {
             image:ESports,
             positions: [
                 {
-                    name: "Anshik",
-                    position: "Secretary",
+                    name: "AVTG",
+                    position: "Vice President",
                     image: image,
-                    mobno: "9256857504"
+                    mobno: "9664468638"
                 },
             ],
 
