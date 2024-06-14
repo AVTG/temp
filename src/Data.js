@@ -6,28 +6,28 @@ import IndoorArena from './assets/Facilities/IndoorArenas.png'
 import SportsField from './assets/Facilities/SportsField.png'
 import SportField from './assets/SportField.jpg'
 import Gymnass from './assets/Gymnass.jpg'
-import Indoor from './assets/Indoor.jpg' ;
-import E_sports from './assets/E_sports.jpg' ;
+import Indoor from './assets/Indoor.jpg';
+import E_sports from './assets/E_sports.jpg';
 
 //Sports Programs
-import TableTennis from './assets/SportsProgram/TableTennis.jpg' ;
-import Football from './assets/SportsProgram/Football.jpg' ;
-import Athletics from './assets/SportsProgram/Athletics.jpg' ;
-import Cricket from './assets/SportsProgram/Cricket.jpg' ;
-import VolleyBall from './assets/SportsProgram/VolleyBall.jpg' ;
-import Kabbadi from './assets/SportsProgram/Kabbadi.jpg' ;
-import HandBall from './assets/SportsProgram/HandBall.jpg' ;
-import MartialArts from './assets/SportsProgram/MartialArts.jpg' ;
-import Badminton from './assets/SportsProgram/Badminton.jpg' ;
-import BoardGames from './assets/SportsProgram/BoardGames.jpg' ;
-import ESports from './assets/SportsProgram/EsportsSportsProgram.jpg' ;
+import TableTennis from './assets/SportsProgram/TableTennis.jpg';
+import Football from './assets/SportsProgram/Football.jpg';
+import Athletics from './assets/SportsProgram/Athletics.jpg';
+import Cricket from './assets/SportsProgram/Cricket.jpg';
+import VolleyBall from './assets/SportsProgram/VolleyBall.jpg';
+import Kabbadi from './assets/SportsProgram/Kabbadi.jpg';
+import HandBall from './assets/SportsProgram/HandBall.jpg';
+import MartialArts from './assets/SportsProgram/MartialArts.jpg';
+import Badminton from './assets/SportsProgram/Badminton.jpg';
+import BoardGames from './assets/SportsProgram/BoardGames.jpg';
+import ESports from './assets/SportsProgram/EsportsSportsProgram.jpg';
 
 
 //SportsData
 // Position of Responsibilities Images
 import facultyInCharge from './assets/OfficeBearer_SportsPage/24_facultyinCharge.jpg';
 import General_Secretary from './assets/OfficeBearer_SportsPage/24_GS.jpg';
-import image from './assets/OfficeBearer_SportsPage/AVTG.jpg';
+import image from './assets/OfficeBearer_SportsPage/image.png';
 import badminton1 from './assets/OfficeBearer_SportsPage/badminton1.jpg';
 import Sarthak_Cricket from "./assets/OfficeBearer_SportsPage/Sarthak_Cricket.jpg";
 import Hrithik_Cricket from "./assets/OfficeBearer_SportsPage/Hrithik_Cricket.jpg";
@@ -36,52 +36,98 @@ import Himanshu_VollleyBall from "./assets/OfficeBearer_SportsPage/Himanshu_Voll
 import Ashutosh_Handball from "./assets/OfficeBearer_SportsPage/Ashutosh_Handball.jpg";
 import Prince_MartialArts from "./assets/OfficeBearer_SportsPage/Prince_MartialArts.jpg";
 import Adarsh_TableTennis from "./assets/OfficeBearer_SportsPage/Adarsh_TableTennis.jpg";
-import Siddharth_Football from "./assets/OfficeBearer_SportsPage/Siddharth_Football.jpg" ;
-import Shivam_Athletics from "./assets/OfficeBearer_SportsPage/Shivam_Athletics.jpg" ;
-import Praneeth_Kabaddi from "./assets/OfficeBearer_SportsPage/Praneeth_Kabaddi.jpg" ;
+import Siddharth_Football from "./assets/OfficeBearer_SportsPage/Siddharth_Football.jpg";
+import Shivam_Athletics from "./assets/OfficeBearer_SportsPage/Shivam_Athletics.jpg";
+import Praneeth_Kabaddi from "./assets/OfficeBearer_SportsPage/Praneeth_Kabaddi.jpg";
 
 
 //Sports Image
 //football
-import Football1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football1.jpg" ;
-import Football2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football2.jpg" ;
-import Football3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football3.jpg" ;
-import Football4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football4.jpg" ;
-import Football5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football5.jpg" ;
-import Football6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football6.jpg" ;
+import Football1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football1.jpg";
+import Football2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football2.jpg";
+import Football3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football3.jpg";
+import Football4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football4.jpg";
+import Football5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football5.jpg";
+import Football6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Football/Football6.jpg";
 
 //Handball
-import Handball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball1.JPG" ;
-import Handball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball2.JPG" ;
-import Handball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball3.JPG" ;
-import Handball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball4.JPG" ;
-import Handball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball5.JPG" ;
-import Handball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball6.JPG" ;
+import Handball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball1.JPG";
+import Handball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball2.JPG";
+import Handball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball3.JPG";
+import Handball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball4.JPG";
+import Handball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball5.JPG";
+import Handball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Handball/Handball6.JPG";
 
 //Volleyball
-import Volleyball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball1.JPG" ;
-import Volleyball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball2.JPG" ;
-import Volleyball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball3.JPG" ;
-import Volleyball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball4.JPG" ;
-import Volleyball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball5.JPG" ;
-import Volleyball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball6.JPG" ;
+import Volleyball1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball1.JPG";
+import Volleyball2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball2.JPG";
+import Volleyball3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball3.JPG";
+import Volleyball4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball4.JPG";
+import Volleyball5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball5.JPG";
+import Volleyball6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Volleyball/Volleyball6.JPG";
 
 
 //Kabaddi
-import Kabaddi1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi1.JPG" ;
-import Kabaddi2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi2.JPG" ;
-import Kabaddi3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi3.JPG" ;
-import Kabaddi4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi4.JPG" ;
-import Kabaddi5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi5.JPG" ;
-import Kabaddi6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi6.JPG" ;
+import Kabaddi1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi1.JPG";
+import Kabaddi2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi2.JPG";
+import Kabaddi3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi3.JPG";
+import Kabaddi4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi4.JPG";
+import Kabaddi5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi5.JPG";
+import Kabaddi6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Kabaddi/Kabaddi6.JPG";
 
 //Board Games
-import BoardGames1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames1.JPG" ;
-import BoardGames2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames2.JPG" ;
-import BoardGames3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames3.JPG" ;
-import BoardGames4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames4.JPG" ;
-import BoardGames5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames5.JPG" ;
-import BoardGames6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames6.JPG" ;
+// import BoardGames1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames1.JPG";
+import BoardGames2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames2.JPG";
+import BoardGames3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames3.JPG";
+import BoardGames4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames4.JPG";
+import BoardGames5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames5.JPG";
+import BoardGames6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/BoardGames/BoardGames6.JPG";
+
+
+//Athletics
+import Athletics1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Athletics/Athletics1.JPG";
+import Athletics2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Athletics/Athletics2.JPG";
+import Athletics3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Athletics/Athletics3.JPG";
+import Athletics4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Athletics/Athletics4.JPG";
+import Athletics5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Athletics/Athletics5.JPG";
+
+
+//Badimnton
+import Badminton1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Badminton/Badminton1.JPG";
+import Badminton2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Badminton/Badminton2.JPG";
+import Badminton3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Badminton/Badminton3.JPG";
+import Badminton4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Badminton/Badminton4.JPG";
+
+
+//Cricket
+import Cricket1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket1.JPG";
+import Cricket2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket2.JPG";
+import Cricket3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket3.JPG";
+import Cricket4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket4.JPG";
+import Cricket5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket5.JPG";
+import Cricket6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket6.JPG";
+import Cricket7 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket7.JPG";
+import Cricket8 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket8.JPG";
+import Cricket9 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Cricket/Cricket9.JPG";
+
+
+//Esports
+import Esports1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Esports/Esports1.JPG";
+import Esports2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Esports/Esports2.JPG";
+import Esports3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Esports/Esports3.JPG";
+import Esports4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Esports/Esports4.JPG";
+import Esports5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/Esports/Esports5.JPG";
+
+//Table Tennis
+import TT1 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT1.JPG";
+import TT2 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT2.JPG";
+import TT3 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT3.JPG";
+import TT4 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT4.JPG";
+import TT5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT5.JPG";
+import TT6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT6.JPG";
+import TT7 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT7.JPG";
+
+
 
 
 
@@ -225,19 +271,19 @@ export const Data = {
                 {
                     name: "Satyam Kumar Sahani",
                     position: "UG Boys Nominee",
-                    image: facultyInCharge,
+                    image: image,
                     mobno: "9454343506"
                 },
                 {
                     name: "Bhavika vishnoi",
                     position: "UG Girls Nominee",
-                    image: facultyInCharge,
+                    image: image,
                     mobno: "8209259941"
                 },
                 {
                     name: "Mithlesh Mandal",
                     position: "PG Nominee",
-                    image: facultyInCharge,
+                    image: image,
                     mobno: "9771806000"
                 },
             ],
@@ -247,6 +293,7 @@ export const Data = {
             id: 1,
             sportsName: 'Badminton',
             image: Badminton,
+            SportsImage: [ Badminton1, Badminton2, Badminton3, Badminton4 ],
             positions: [
                 {
                     name: "Anurag Singh",
@@ -274,6 +321,7 @@ export const Data = {
             id: 2,
             sportsName: 'Table Tennis',
             image: TableTennis,
+            SportsImage: [ TT1, TT2, TT3, TT4, TT5, TT6, TT7 ],
             positions: [
                 {
                     name: "Adarsh Srivastava",
@@ -304,7 +352,7 @@ export const Data = {
             id: 3,
             sportsName: 'Foot Ball',
             image: Football,
-            SportsImage:{Football1, Football2, Football3, Football4, Football5, Football6}, 
+            SportsImage: [Football1, Football2, Football3, Football4, Football5, Football6] ,
 
             positions: [
                 {
@@ -335,6 +383,8 @@ export const Data = {
             id: 4,
             sportsName: 'Athletics',
             image: Athletics,
+            SportsImage: [Athletics1, Athletics2, Athletics3, Athletics4, Athletics5],
+
             positions: [
                 {
                     name: "Shivam Thakre",
@@ -366,7 +416,7 @@ export const Data = {
             id: 5,
             sportsName: 'Kabbadi',
             image: Kabbadi,
-            SportsImage:{Kabaddi1, Kabaddi2, Kabaddi3, Kabaddi4, Kabaddi5, Kabaddi6}, 
+            SportsImage: [Kabaddi1, Kabaddi2, Kabaddi3, Kabaddi4, Kabaddi5, Kabaddi6 ],
 
             positions: [
                 {
@@ -401,7 +451,7 @@ export const Data = {
             id: 6,
             sportsName: 'Volley Ball',
             image: VolleyBall,
-            SportsImage:{Volleyball1, Volleyball2, Volleyball3, Volleyball4, Volleyball5, Volleyball6}, 
+            SportsImage: [Volleyball1, Volleyball2, Volleyball3, Volleyball4, Volleyball5, Volleyball6 ],
 
             positions: [
                 {
@@ -430,6 +480,8 @@ export const Data = {
             id: 7,
             sportsName: 'Cricket',
             image: Cricket,
+            SportsImage: [Cricket1, Cricket2, Cricket3, Cricket4, Cricket5, Cricket6, Cricket7, Cricket8, Cricket9] ,
+
             positions: [
                 {
                     name: "Sarthak Singh",
@@ -468,7 +520,7 @@ export const Data = {
             id: 8,
             sportsName: 'Hand Ball',
             image: HandBall,
-            SportsImage:{Handball1, Handball2, Handball3, Handball4, Handball5, Handball6}, 
+            SportsImage: [Handball1, Handball2, Handball3, Handball4, Handball5, Handball6] ,
 
             positions: [
                 {
@@ -496,6 +548,7 @@ export const Data = {
             id: 9,
             sportsName: 'Martial Arts',
             image: MartialArts,
+            SportsImage: [],
             positions: [
                 {
                     name: "Prince Sharma",
@@ -506,26 +559,19 @@ export const Data = {
             ],
 
             tenet: {
-                Quote: "",
-                Author: "",
-                Desription: ""
+                Quote: "The key to immortality is first living a life worth remembering.",
+                Author: "Bruce Lee",
+                Desription: "Step into the club of martial arts, where the art of self-defense merges with the joy of learning and personal empowerment. Here, you'll not only gain practical skills for self-protection but also cultivate physical and mental fitness, honing agility, reflexes, and focus. Beyond the physical, martial arts instill discipline, respect, and humility, fostering a culture of integrity and honor. Join our community and embark on a journey of self-discovery and camaraderie, where learners of all levels come together to grow and excel."
             },
 
-            fields: [
-                {
-                    field: ""
-                },
-                {
-                    field: ""
-                }
-            ]
+            fields: []
         },
 
         {
             id: 10,
             sportsName: 'Board Games',
             image: BoardGames,
-            SportsImage:{BoardGames1, BoardGames2, BoardGames3, BoardGames4, BoardGames5, BoardGames6}, 
+            SportsImage: [ BoardGames2, BoardGames3, BoardGames4, BoardGames5, BoardGames6],
 
             positions: [
                 {
@@ -554,7 +600,9 @@ export const Data = {
         {
             id: 11,
             sportsName: 'E-Sports',
-            image:ESports,
+            image: ESports,
+            SportsImage: [Esports1, Esports2, Esports3, Esports4, Esports5],
+
             positions: [
                 {
                     name: "Anshik",
@@ -565,18 +613,15 @@ export const Data = {
             ],
 
             tenet: {
-                Quote: "",
-                Author: "",
-                Desription: ""
+                Quote: "Winning isn't everything, but it's definitely the main goal.",
+                Author: `Johan "N0tail" Sundstein`,
+                Desription: "Step into the electrifying world of esports at our college, where the thrill of gaming meets the warmth of friendly competition. Here, esports isn't just about playing games, it's about immersing yourself in captivating virtual worlds, forging lasting friendships, and embracing a culture of sportsmanship. Whether you're a seasoned pro or a casual player, there's a place for everyone to unleash their passion for gaming and revel in the excitement it brings. Our community values fairness, respect, and integrity above all else, ensuring that every match is a testament to the spirit of friendly competition. From casual gaming nights to competitive tournaments, there are endless opportunities to get involved, make new friends, and discover your passion for esports. "
             },
 
             fields: [
                 {
-                    field: ""
+                    field: "Gaming room is provide during the events organised within the college with very stable and low latency LAN connection"
                 },
-                {
-                    field: ""
-                }
             ]
         },
 

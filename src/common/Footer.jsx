@@ -5,6 +5,9 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
+import { IoHome } from "react-icons/io5";
+import { HiOutlineMail } from "react-icons/hi";
+
 import { NavLink } from "react-router-dom";
 
 
@@ -18,27 +21,32 @@ const Footer = () => {
 
   const links = [
     [
-      { label: "Navigation", key: "header", to:"/" },
-      { label: "About the Institute", key: "item", to:"https://www.iiitbh.ac.in/about-iiitbh" },
-      { label: "Blog", key: "item", to:"/" },
-      { label: "Administratation", key: "item" , to:"https://www.iiitbh.ac.in/iiitbh-administration"},
-      { label: "IIITBH Alumni", key: "item", to:"https://alumni.iiitbh.ac.in/" },
-      { label: "Testimonials", key: "item" , to:"/"},
+      { label: "Navigation", key: "header" },
+      { label: "About the Institute", key: "item", to: "https://www.iiitbh.ac.in/about-iiitbh" },
+      { label: "Blog", key: "item", to: "/" },
+      { label: "Administratation", key: "item", to: "https://www.iiitbh.ac.in/iiitbh-administration" },
+      { label: "IIITBH Alumni", key: "item", to: "https://alumni.iiitbh.ac.in/" },
+      { label: "Testimonials", key: "item", to: "/" },
     ],
     [
-      { label: "Support", key: "header" , to:"/"},
-      { label: "Help center", key: "item" , to:"/"},
-      { label: "Terms of service", key: "item" , to:"/"},
+      { label: "Support", key: "header" },
+      { label: "Help center", key: "item", to: "/" },
+      { label: "Terms of service", key: "item", to: "/" },
       { label: "Legal", key: "item-2-3" },
-      { label: "Privacy policy", key: "item" , to:"/" },
-      { label: "Status", key: "item" , to:"/"},
+      { label: "Privacy policy", key: "item", to: "/" },
+      { label: "Status", key: "item", to: "/" },
+    ],
+    [
+      { label: "Location", key: "header" },
+      { label: "How To Reach", key: "item", to: "https://www.iiitbh.ac.in/how-reach" },
+      { label: "Accomodations Nearby", key: "item", to: "https://www.iiitbh.ac.in/accomodation" },
     ],
   ];
 
   return (
 
-    <div className="py-16 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1  backdrop-blur-lg bg-black  bg-opacity-70 text-white w-full p-4 relative justify-center">
-      <div className="flex flex-col space-y-2 items-center">
+    <div className="py-16 justify-evenly flex flex-wrap  backdrop-blur-lg bg-black  bg-opacity-70 text-white w-full p-4 relative">
+      <div className="flex flex-col space-y-2 items-center w-[300px]">
         <NavLink to={"/"} className="footer-img flex items-center space-x-3">
           <img
             src={logonew}
@@ -70,17 +78,17 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="mx-2 flex flex-wrap w-[90%] sm:justify-around py-5 sm:py-0 justify-center gap-4">
+      <div className="mx-2 flex flex-wrap sm:justify-around py-5 sm:py-0 justify-center space-x-10 ">
         {links.map((col, index) => {
           return (
-            <ul  key={`col-${index}`}>
+            <ul key={`col-${index}`}>
               {col.map((link, index) => {
                 return (
                   <li
                     key={`link-${col}-${index}`}
-                    className={`text-gray-400 ${link.key === "header" || link.key === "header"
+                    className={` ${link.key === "header" || link.key === "header"
                       ? "text-2xl text-white"
-                      : ""
+                      : "text-gray-400 hover:text-sky-500"
                       }`}
                   >
                     {link.key === "header" && (link.label)}
@@ -96,15 +104,17 @@ const Footer = () => {
           );
         })}
       </div>
-      <div className="footer-form flex flex-col  ">
-        <label className="text-lg font-semibold text-white">
-          Stay up to date
-        </label>
-        <input
-          type="email"
-          placeholder="Subscribe to our email"
-          className="mt-2 w-full border-none rounded-lg py-3 px-6"
-        />
+      <div className='flex-col w-[300px] space-y-2'>
+        <div className="[font-family:'Inter-SemiBold',Helvetica]  text-white text-[1.4rem]  leading-[30px]">Contact info</div>
+        <div className="[font-family:'Inter-SemiBold',Helvetica]  text-gray-300 text-[1.05rem]  leading-[20px]">Indian Institute of Information Technology Bhagalpur.</div>
+        <div className="space-x-3 [font-family:'Inter-SemiBold',Helvetica]  text-gray-300 text-[1.05rem]  leading-[20px]">
+          <IoHome className='text-[1.2rem] text-[#F9EFDB] inline mr-1' />
+          Bhagalpur College of Engineering Campus Sabour, Bhagalpur - 813210
+        </div>
+        <div className="space-x-3 [font-family:'Inter-SemiBold',Helvetica]  text-gray-300 text-[1.05rem]  leading-[18px]">
+          <HiOutlineMail className='text-[1.4rem] text-[#F9EFDB] inline mr-2' />
+          pro@iiitbh.ac.in
+        </div>
       </div>
     </div>
   );

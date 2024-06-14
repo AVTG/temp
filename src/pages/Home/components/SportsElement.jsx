@@ -9,7 +9,7 @@ export const SportsElement = (props) => {
                 alt="Ellipse"
                 src={props.currElement.image}
             />
-            <div className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[1.75rem] tracking-[-1.92px] leading-[normal]">
+            <div className="[font-family:'Inter-SemiBold',Helvetica]  text-black text-[1.65rem] tracking-[-2.2px] leading-[normal]">
                 {props.currElement.sportsName}
             </div>
         </NavLink>
