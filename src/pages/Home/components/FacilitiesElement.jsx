@@ -58,7 +58,7 @@ export const FacilitiesElement = (props) => {
       </div>
       </div>
       <div>
-        <div className={`modal ${isActive ? 'active' : ''}`} style={{ transition: 'opacity 0.3s ease' }}>
+        <div className={`modal ${isActive ? 'active' : ''}`} style={{ transition: 'opacity 0.3s ease' } }>
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
