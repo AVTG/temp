@@ -7,8 +7,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +32,7 @@ rgba(0, 0, 0, 0.5) 93%
 .popup_mid{
   border: 2px dashed grey;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
-  height: 95vh;
-  justify-content: space-between;
-  width: 90%;
-  padding: 10px;
- 
+  height: 92vh;
 }
 
 .popup_mid::-webkit-scrollbar {
@@ -47,19 +41,8 @@ rgba(0, 0, 0, 0.5) 93%
 
 
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background */
   z-index: 1000; /* on top of other elements */
- 
-  opacity: 0;
-  visibility: hidden;
 }
 
 .modal.active {
@@ -69,21 +52,13 @@ rgba(0, 0, 0, 0.5) 93%
   transition: opacity 30s ease, visibility 30s ease-in-out;
 }
 .fascilityimage {
-  width: 100%; /* Adjust to fit the container */
-  max-width: 100%; /* Ensure it does not exceed the container's width */
-  /* height: auto;  Maintain aspect ratio  */
-  margin-right: 0; /* Remove unnecessary margin */
-  display: block; /* Ensure proper layout within flex containers */
-  border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  object-fit: cover;
-  aspect-ratio: 1/1; /* Maintain 1:1 aspect ratio */
+  
 }
 @media (max-width: 768px) {
   .imgdes {
     display: inline;
-    /* width: 500px; */
     height: 300px;
     margin-top: 295px;
   }
@@ -94,7 +69,6 @@ rgba(0, 0, 0, 0.5) 93%
   }
   .about-cont{
     width: 100%;
-    margin-top: 25px;
-    
+    margin-top: 25px;     
   }
 }

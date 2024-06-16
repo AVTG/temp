@@ -5,7 +5,7 @@ import Gymnassium from './assets/Facilities/Gymnassium.png'
 import IndoorArena from './assets/Facilities/IndoorArenas.png'
 import SportsField from './assets/Facilities/SportsField.png'
 import SportField from './assets/SportField.jpg'
-import Gymnass from './assets/Gymnass.jpg'
+import Gymnass from './assets/Gym.jpg'
 import Indoor from './assets/Indoor.jpg';
 import E_sports from './assets/E_sports.jpg';
 

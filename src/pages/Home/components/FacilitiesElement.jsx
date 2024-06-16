@@ -47,22 +47,22 @@ export const FacilitiesElement = (props) => {
       onClick={toggleModal}
       style={{ backgroundImage, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-       <div className="flex flex-col w-[250px] h-[250px] items-center relative justify-center">
-      <img
-        className="w-full object-cover"
+       <div className="flex flex-col w-[250px] h-[250px] items-center  justify-around">
+      <img 
+        className="w-full object-cover  "
         alt="Pexels monstera"
         src={props.currElement.image}
       />
-      <div className="absolute w-[100%] bottom-[40px] left-0 [font-family:'Inter',Helvetica] font-bold text-[#fffcfc] text-[2rem] text-center tracking-[-1.92px] leading-[normal]">
+      <div className="absolute w-[100%] bottom-[40px] left-0 [font-family:'Inter',Helvetica] font-bold text-[#fffcfc] text-[2rem] text-center tracking-[-1.92px] leading-[normal] info">
         {props.currElement.FacilityTitle}
       </div>
       </div>
       <div>
-        <div className={`modal ${isActive ? 'active' : ''}`} style={{ transition: 'opacity 0.3s ease' } }>
+        <div className={`modal ${isActive ? 'active' : ''} fixed top-0 left-0 w-[100%] h-[100%] hidden justify-center items-center opacity-0 invisible`} style={{ transition: 'opacity 0.3s ease' } }>
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
-            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto'
+            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] p-10'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="flex-col justify-start items-center ">
@@ -92,7 +92,7 @@ export const FacilitiesElement = (props) => {
                    
                     <div className="imgdes flex">
                     <div className="image-container md:flex md:w-1/4 w-[60%] mx-auto my-6 ">
-                    <img src={props.currElement.FacilityBg} alt="Sports Field" className="fascilityimage"/>
+                    <img src={props.currElement.FacilityBg} alt="Sports Field" className="fascilityimage w-[100%] mr-0 block rounded-lg object-cover aspect-square"/>
                   </div>               
                     <div className="md:w-3/4 ">
                       <p className="opacity-60 [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal] m-2">
