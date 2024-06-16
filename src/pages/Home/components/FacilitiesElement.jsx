@@ -62,12 +62,12 @@ export const FacilitiesElement = (props) => {
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
-            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] p-10'
+            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%]'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
-              <div className="flex-col justify-start items-center ">
+              <div className="flex-col justify-start items-center">
                 <div className="flex justify-between items-center">
-                  <NavLink to="/" className="flex justify-center items-center space-x-2">
+                  <NavLink to="/" className="flex justify-center items-center space-x-2 px-2">
                     <div className="w-[65px] py-2">
                       <img src={logonew} alt="logo" />
                     </div>
@@ -88,7 +88,7 @@ export const FacilitiesElement = (props) => {
                         {props.currElement.FacilityTitle}
                       </h4>
                     </div>
-                  <div className="content">
+                  <div className="content p-8">
                    
                     <div className="imgdes flex">
                     <div className="image-container md:flex md:w-1/4 w-[60%] mx-auto my-6 ">
