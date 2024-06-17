@@ -28,14 +28,14 @@ const Footer = () => {
       { label: "IIITBH Alumni", key: "item", to: "https://alumni.iiitbh.ac.in/" },
       { label: "Testimonials", key: "item", to: "/" },
     ],
-    [
-      { label: "Support", key: "header" },
-      { label: "Help center", key: "item", to: "/" },
-      { label: "Terms of service", key: "item", to: "/" },
-      { label: "Legal", key: "item-2-3" },
-      { label: "Privacy policy", key: "item", to: "/" },
-      { label: "Status", key: "item", to: "/" },
-    ],
+    // [
+    //   { label: "Support", key: "header" },
+    //   { label: "Help center", key: "item", to: "/" },
+    //   { label: "Terms of service", key: "item", to: "/" },
+    //   { label: "Legal", key: "item-2-3" },
+    //   { label: "Privacy policy", key: "item", to: "/" },
+    //   { label: "Status", key: "item", to: "/" },
+    // ],
     [
       { label: "Location", key: "header" },
       { label: "How To Reach", key: "item", to: "https://www.iiitbh.ac.in/how-reach" },
@@ -45,7 +45,7 @@ const Footer = () => {
 
   return (
 
-    <div className="py-16 justify-evenly flex flex-wrap  backdrop-blur-lg bg-black  bg-opacity-70 text-white w-full p-4 relative">
+    <div className="py-16 justify-evenly flex flex-wrap  backdrop-blur-lg bg-black  bg-opacity-70 text-white w-full p-4 relative gap-5">
       <div className="flex flex-col space-y-2 items-center w-[300px]">
         <NavLink to={"/"} className="footer-img flex items-center space-x-3">
           <img

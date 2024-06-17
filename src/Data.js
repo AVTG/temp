@@ -27,6 +27,7 @@ import ESports from './assets/SportsProgram/EsportsSportsProgram.jpg';
 // Position of Responsibilities Images
 import facultyInCharge from './assets/OfficeBearer_SportsPage/24_facultyinCharge.jpg';
 import General_Secretary from './assets/OfficeBearer_SportsPage/24_GS.jpg';
+import nominee from './assets/OfficeBearer_SportsPage/24_nominee.jpg'
 import image from './assets/OfficeBearer_SportsPage/image.png';
 import badminton1 from './assets/OfficeBearer_SportsPage/badminton1.jpg';
 import Sarthak_Cricket from "./assets/OfficeBearer_SportsPage/Sarthak_Cricket.jpg";
@@ -242,6 +243,82 @@ export const Data = {
         ]
     },
 
+    UdyatvaData : {
+        AboutUdyatva:[
+            {
+                id: 1,
+                heading: "Diverse Events" ,
+                description: "Participate in a wide range of sports events and showcase your skills." ,
+            },
+            {
+                id: 1,
+                heading: "Exciting Prizes" ,
+                description: "Compete for prestigious prizes and be recognized by the college director." ,
+            },
+            {
+                id: 1,
+                heading: "Non-stop Fun" ,
+                description: "Enjoy non-stop fun and entertainment from morning till night." ,
+            },
+        ],
+        SportsEvents: [
+            {
+                id:1,
+                sportsName: "Cricket" ,
+                description: "Experience the thrill of the gentleman's game and showcase your batting and bowling skills.",
+            },
+            {
+                id:2,
+                sportsName: "Football" ,
+                description: "Join the beautiful game and compete with your team to score goals and lift the Udyatva trophy.",
+            },
+            {
+                id:3,
+                sportsName: "Basketball" ,
+                description: "Dribble, shoot, and dunk your way to victory in the fast-paced and exciting game of basketball.",
+            },
+            {
+                id:4,
+                sportsName: "Badminton" ,
+                description: "Smash, drop, and rally your way to become the Udyatva badminton champion.",
+            },
+            {
+                id:5,
+                sportsName: "Volleyball" ,
+                description: "Spike, block, and serve your way to victory in the intense and energetic game of volleyball.",
+            },
+            
+
+        ],
+        PrizesAndAwardsData:[
+            {
+                id: 1,
+                heading: "Trophy for Champions",
+                description: "The ultimate prize for the winners, a symbol of their victory and hard work.",
+            },
+            {
+                id: 2,
+                heading: "Medals for Runners-up",
+                description: "Recognizing the efforts of the second-place finishers, a token of their dedication.",
+            },
+            {
+                id: 3,
+                heading: "Certificates of Achievement",
+                description: "Honoring all participants for their sportsmanship and commitment to excellence.",
+            },
+            {
+                id: 4,
+                heading: "Special Awards for Outstanding Performances",
+                description: "Acknowledging exceptional skills and remarkable achievements in specific sports.",
+            },
+            {
+                id: 5,
+                heading: "Director's Choice Awards",
+                description: "Handpicked by the college director, these awards celebrate extraordinary talent and dedication.",
+            },
+        ],
+    },
+
     SportsData: [
         {
             id: -1,
@@ -271,7 +348,7 @@ export const Data = {
                 {
                     name: "Satyam Kumar Sahani",
                     position: "UG Boys Nominee",
-                    image: image,
+                    image: nominee,
                     mobno: "9454343506"
                 },
                 {

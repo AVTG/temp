@@ -5,7 +5,7 @@ export const SportsPageElement = ({ object }) => {
         <div className="w-[100%] bg-[#e8e8e8] space-y-9 ">
             <div className=" mx-auto text-center [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] self-start">{object.sportsName + " Club at IIITBH"}</div>
 
-            <div className={`w-11/12 mx-auto space-y-5 flex flex-col lg:flex-row lg:gap-10 lg:space-y-0 justify-center gap-3 ${object.positions.length > 1 ? "" : "md:flex-row"}`}>
+            <div className={`w-11/12 mx-auto space-y-5 flex flex-col-reverse lg:flex-row lg:gap-10 lg:space-y-0 justify-center gap-3 ${object.positions.length > 1 ? "" : "md:flex-row"}`}>
                 {/* tenet */}
                 <div className={`flex-col items-start ${object.positions.length > 1 ? "lg:max-w-[50%] " : "lg:max-w-[65%] "} space-y-3`}>
                     <div className="  [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2rem] tracking-[-2.88px] leading-[normal] ">
