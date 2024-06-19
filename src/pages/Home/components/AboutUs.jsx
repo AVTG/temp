@@ -28,12 +28,7 @@ export const AboutUs = () => {
         setIsReadMore(!isReadMore);
     };
 
-    const description = ` We turn novices into champions here at IIT Delhi grounds. The best facilities provided by us have led to great results
-                            and our presence is now being felt in the Delhi circles as well as in the inter-college meets outside. As an
-                            organization, we are a group of around 300 people including players, coaches, trainers, and administrative staff who are
-                            working to take our sporting standards at par with the best in the business. Apart from being the apex body for sports in IITD,
-                            we are involved in a number of social events, informal events, hosting sports tournaments, and other collaborations and
-                            therefore the number of people involved with BSA is huge.`
+    const description = `At IIIITBH, we understand that your studies are a top priority. However, we also recognize the importance of maintaining a healthy body and mind. That’s why we encourage students to take breaks from their academic pursuits and participate in social sports. Whether it’s a friendly game of basketball, a refreshing run, or a relaxing yoga session, engaging in physical activity contributes to your overall well-being. As the premier sports body at IIITBH, we engage in various social and informal events, host tournaments, and collaborate on numerous initiatives, involving a vast number of dedicated individuals.`
 
     useEffect(() => {
         const handleResize = () => {
@@ -46,47 +41,49 @@ export const AboutUs = () => {
 
 
 
-    return(
-        <div className="md:flex flex-col items-start justify-center gap-[48px] mx-50 bg-[#ffffff] mx-auto mb-[4rem]">
-        <div className="gap-[1.5rem] md:flex justify-between w-full border-solid border-0 ">
-            <div className="w-2/5 items-center m-auto h-full about-slide">
-                <Slide>
-                    {SlideImages.map((image, index) => (
-                        <div key={index} className="each-fade">
-                            <div className="image-container w-[80%] h-[300px] overflow-hidden object-fit pl-1 m-auto rounded-xl  backgroundSize: 'cover', backgroundPosition: 'center'">
-                                <img src={image.img} alt={`slide-${index}`} className="object-cover" />
-                            </div>
-                        </div>
-                    ))}
-                </Slide>
+    return (
+        <div className=" flex-col items-center justify-center bg-[#ffffff] mx-auto my-[4rem] w-11/12 ">
+            <div className="mx-auto [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] text-center">
+                About Us
             </div>
-            <div className="md:w-3/5 about-cont ">
-                <h1 className="[font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.88px] leading-[normal] underline px-5">About Us</h1>
-                <p className="p-5 opacity-70 text-black text-[1.5rem] tracking-[-0.96px] leading-[normal] self-start">
+            <div className="flex flex-wrap justify-center items-center">
+                <div className="w-2/5 items-center m-auto h-full about-slide">
+                    <Slide>
+                        {SlideImages.map((image, index) => (
+                            <div key={index} className="each-fade">
+                                <div className="image-container w-[80%] h-[300px] overflow-hidden object-fit pl-1 m-auto rounded-xl  backgroundSize: 'cover', backgroundPosition: 'center'">
+                                    <img src={image.img} alt={`slide-${index}`} className="object-cover" />
+                                </div>
+                            </div>
+                        ))}
+                    </Slide>
+                </div>
+                <div className="md:w-3/5 about-cont ">
+                    <p className="p-8 opacity-70 text-[1.4rem] tracking-[-0.96px] leading-[30px] self-start [font-family:'Inter',Helvetica]  text-[#191919] ">
 
-                    {isMobile ? (
-                        isReadMore ? description : `${description.substring(0, 500)}....`
-                    ) : (
-                        description
-                    )}
-                    {isMobile && (
-                        <span
-                            style={{
-                                color: '#12b8c8',
-                                textTransform: 'capitalize',
-                                cursor: 'pointer',
-                            }}
-                            onClick={toggleReadMore}
-                        >
-                            {isReadMore ? ' show less' : ' read more'}
-                        </span>
-                    )}
+                        {isMobile ? (
+                            isReadMore ? description : `${description.substring(0, 500)}....`
+                        ) : (
+                            description
+                        )}
+                        {isMobile && (
+                            <span
+                                style={{
+                                    color: '#12b8c8',
+                                    textTransform: 'capitalize',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={toggleReadMore}
+                            >
+                                {isReadMore ? ' show less' : ' read more'}
+                            </span>
+                        )}
 
 
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
     )
 }

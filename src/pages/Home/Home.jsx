@@ -17,7 +17,7 @@ export const Home = () => {
 
 
         // container
-        <div className="bg-[#ffffff] w-100% box-border ">
+        <div className="bg-[#ffffff] w-100% box-border flex-col ">
             <Navbar contentRef={contentRef} />
 
             {/* Image  */}

@@ -1,19 +1,21 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import logonew from '../../../assets/logonew.png';
 import Sportsbg from '../../../assets/Sportsbg.jpg';
 import { NavLink } from "react-router-dom";
 import { FaXmark } from "react-icons/fa6";
 import "./style.css";
+
+
 export const FacilitiesElement = (props) => {
   const [isActive, setIsActive] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
   const [isReadMore, setIsReadMore] = useState(false);
-  const backgroundImage = 'url(default-background.jpg)' ;
+  const backgroundImage = 'url(default-background.jpg)';
 
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
   };
-  
+
   const toggleModal = () => {
     setIsActive(!isActive);
   };
@@ -21,25 +23,22 @@ export const FacilitiesElement = (props) => {
   const closeModal = () => {
     setIsActive(false);
   };
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 850);
+  };
 
   useEffect(() => {
     if (isActive) {
       document.body.style.overflow = 'hidden';
     }
-
-    return () => {
+    else {
       document.body.style.overflow = 'auto';
-    };
-  }, [isActive]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 850);
-    };
-
+    }
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [isActive]);
 
   return (
     <div
@@ -47,22 +46,24 @@ export const FacilitiesElement = (props) => {
       onClick={toggleModal}
       style={{ backgroundImage, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-       <div className="flex flex-col w-[250px] h-[250px] items-center  justify-around">
-      <img 
-        className="w-full object-cover  "
-        alt="Pexels monstera"
-        src={props.currElement.image}
-      />
-      <div className="absolute w-[100%] bottom-[40px] left-0 [font-family:'Inter',Helvetica] font-bold text-[#fffcfc] text-[2rem] text-center tracking-[-1.92px] leading-[normal] info">
-        {props.currElement.FacilityTitle}
-      </div>
+
+      {/* Facility Home Icons */}
+      <div className="flex flex-col w-[250px] h-[250px] items-center  justify-around">
+        <img
+          className="w-full object-cover  "
+          alt="Pexels monstera"
+          src={props.currElement.image}
+        />
+        <div className="absolute w-[100%] bottom-[40px] left-0 [font-family:'Inter',Helvetica] font-bold text-[#fffcfc] text-[2rem] text-center tracking-[-1.92px] leading-[normal] info">
+          {props.currElement.FacilityTitle}
+        </div>
       </div>
       <div>
-        <div className={`modal ${isActive ? 'active' : ''} fixed top-0 left-0 w-[100%] h-[100%] hidden justify-center items-center opacity-0 invisible`} style={{ transition: 'opacity 0.3s ease' } }>
+        <div className={`modal ${isActive ? 'active' : ''} fixed top-0 left-0 w-[100%] h-[100%] hidden justify-center items-center opacity-0 invisible`} style={{ transition: 'opacity 0.3s ease' }}>
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
-            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%]'
+            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] h-[90vh] max-h-min py-6'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="flex-col justify-start items-center">
@@ -84,46 +85,46 @@ export const FacilitiesElement = (props) => {
                   </div>
                 </div>
                 <div>
-                      <h4 className="[font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] flex justify-center">
-                        {props.currElement.FacilityTitle}
-                      </h4>
-                    </div>
-                  <div className="content p-8">
-                   
-                    <div className="imgdes flex">
+                  <h4 className="[font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] flex justify-center">
+                    {props.currElement.FacilityTitle}
+                  </h4>
+                </div>
+                <div className="content p-8">
+
+                  <div className="imgdes flex">
                     <div className="image-container md:flex md:w-1/4 w-[60%] mx-auto my-6 ">
-                    <img src={props.currElement.FacilityBg} alt="Sports Field" className="fascilityimage w-[100%] mr-0 block rounded-lg object-cover aspect-square"/>
-                  </div>               
+                      <img src={props.currElement.FacilityBg} alt="Sports Field" className="fascilityimage w-[100%] mr-0 block rounded-lg object-cover aspect-square" />
+                    </div>
                     <div className="md:w-3/4 ">
                       <p className="opacity-60 [font-family:'Inter',Helvetica] font-normal text-black text-[1.35rem] tracking-[-0.96px] leading-[normal] m-2">
-                      {isMobile ? (
-                        isReadMore ? props.currElement.description : `${props.currElement.description.substring(0, 500)}....`
-                      ) : (
-                        props.currElement.description
-                      )}
-                      {isMobile && (
-                        <span
-                          style={{
-                            color: '#12b8c8',
-                            textTransform: 'capitalize',
-                            cursor: 'pointer',
-                          }}
-                          onClick={toggleReadMore}
-                        >
-                          {isReadMore ? ' show less' : ' read more'}
-                        </span>
-                      )}
+                        {isMobile ? (
+                          isReadMore ? props.currElement.description : `${props.currElement.description.substring(0, 500)}....`
+                        ) : (
+                          props.currElement.description
+                        )}
+                        {isMobile && (
+                          <span
+                            style={{
+                              color: '#12b8c8',
+                              textTransform: 'capitalize',
+                              cursor: 'pointer',
+                            }}
+                            onClick={toggleReadMore}
+                          >
+                            {isReadMore ? ' show less' : ' read more'}
+                          </span>
+                        )}
                       </p>
                     </div>
                   </div>
-                  </div>
-               
+                </div>
+
                 <div className="flex justify-center items-center">
                   <button
-                    className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-black-900 items-center"
+                    className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg  items-center"
                     onClick={closeModal}
                   >
-                   
+
                     <span>Close</span>
                   </button>
                 </div>
