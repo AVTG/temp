@@ -63,7 +63,7 @@ export const FacilitiesElement = (props) => {
           <div className="popupbg " onClick={closeModal}></div>
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
-            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] h-[90vh] max-h-min py-6'
+            <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] h-[90vh] max-h-max py-6'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="flex-col justify-start items-center">
