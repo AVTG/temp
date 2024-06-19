@@ -4,8 +4,8 @@ import { SportsData } from './SportsData';
 import Spinner from './Spinner';
 import './Spinner.css';
 import './styles.css';
-import { Navbar } from '../../common/Navbar';
-import Footer from '../../common/Footer';
+import { Navbar } from '../Home/components/Navbar';
+import Footer from '../Home/components/Footer';
 
 const Events = () => {
   const [loading, setLoading] = useState(true);
