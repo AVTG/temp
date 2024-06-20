@@ -62,7 +62,7 @@ export const FacilitiesElement = (props) => {
         <div className={`modal ${isActive ? 'active' : ''} fixed top-0 left-0 w-[100%] h-[100%] hidden justify-center items-center opacity-0 invisible`} style={{ transition: 'opacity 0.3s ease' }}>
           <div className="popupbg " onClick={closeModal}></div>
           <div
-            className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-lvh w-1vw flex justify-center items-center ">
+            className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-[100%] w-[100%] flex justify-center items-center ">
             <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] h-[90vh] max-h-max py-6'
               onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
