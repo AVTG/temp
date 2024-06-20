@@ -64,7 +64,7 @@ export const FacilitiesElement = (props) => {
           <div
             className="popup bg-black backdrop-opacity-100 backdrop-blur-sm h-[100%] w-[100%] flex justify-center items-center ">
             <div className='popup_mid flex-col  rounded-xl bg-white overflow-auto justify-between w-[90%] h-[90vh] max-h-max py-6'
-              onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              onClick={e => e.stopPropagation()} style={{ backgroundImage: `url(${Sportsbg})`, backgroundPosition: 'center' }}
             >
               <div className="flex-col justify-start items-center">
                 <div className="flex justify-between items-center">
