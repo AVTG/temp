@@ -5,7 +5,7 @@ export const Facilities = () => {
 
     
     return (
-        <div className="mt-10 flex flex-col w-[100%] items-center  bg-[#FAF6F0] rounded-[30px] box-border py-[4rem] gap-[2.5rem] mb-[4rem]">
+        <div className=" flex flex-col w-[100%] items-center  rounded-[30px] box-border py-[2rem] gap-[2.5rem] mb-[4rem]">
             <div className="flex flex-col  items-start mx-auto box-border w-10/12 space-y-3">
                 <div className=" [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal]">
                     Facilities

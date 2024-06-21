@@ -42,45 +42,47 @@ export const AboutUs = () => {
 
 
     return (
-        <div className=" flex-col items-center justify-center bg-[#ffffff] mx-auto my-[4rem] w-11/12 ">
-            <div className="mx-auto [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] text-center">
-                About Us
-            </div>
-            <div className="flex flex-wrap justify-center items-center">
-                <div className="w-2/5 items-center m-auto h-full about-slide">
-                    <Slide>
-                        {SlideImages.map((image, index) => (
-                            <div key={index} className="each-fade">
-                                <div className="image-container w-[80%] h-[300px] overflow-hidden object-fit pl-1 m-auto rounded-xl  backgroundSize: 'cover', backgroundPosition: 'center'">
-                                    <img src={image.img} alt={`slide-${index}`} className="object-cover" />
-                                </div>
-                            </div>
-                        ))}
-                    </Slide>
+        <div className="w-[100%] bg-[#f7f7f7] py-[4rem] rounded-b-[30px]">
+            <div className=" flex-col items-center justify-center mx-auto w-11/12 ">
+                <div className="mx-auto [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] text-center">
+                    About Us
                 </div>
-                <div className="md:w-3/5 about-cont ">
-                    <p className="p-8 opacity-70 text-[1.4rem] tracking-[-0.96px] leading-[30px] self-start [font-family:'Inter',Helvetica]  text-[#191919] ">
+                <div className="flex flex-wrap justify-center items-center">
+                    <div className="w-2/5 items-center m-auto h-full about-slide">
+                        <Slide>
+                            {SlideImages.map((image, index) => (
+                                <div key={index} className="each-fade">
+                                    <div className="image-container w-[80%] h-[300px] overflow-hidden object-fit pl-1 m-auto rounded-xl  backgroundSize: 'cover', backgroundPosition: 'center'">
+                                        <img src={image.img} alt={`slide-${index}`} className="object-cover" />
+                                    </div>
+                                </div>
+                            ))}
+                        </Slide>
+                    </div>
+                    <div className="md:w-3/5 about-cont ">
+                        <p className="p-8 opacity-70 text-[1.4rem] tracking-[-0.96px] leading-[30px] self-start [font-family:'Inter',Helvetica]  text-[#191919] ">
 
-                        {isMobile ? (
-                            isReadMore ? description : `${description.substring(0, 500)}....`
-                        ) : (
-                            description
-                        )}
-                        {isMobile && (
-                            <span
-                                style={{
-                                    color: '#12b8c8',
-                                    textTransform: 'capitalize',
-                                    cursor: 'pointer',
-                                }}
-                                onClick={toggleReadMore}
-                            >
-                                {isReadMore ? ' show less' : ' read more'}
-                            </span>
-                        )}
+                            {isMobile ? (
+                                isReadMore ? description : `${description.substring(0, 500)}....`
+                            ) : (
+                                description
+                            )}
+                            {isMobile && (
+                                <span
+                                    style={{
+                                        color: '#12b8c8',
+                                        textTransform: 'capitalize',
+                                        cursor: 'pointer',
+                                    }}
+                                    onClick={toggleReadMore}
+                                >
+                                    {isReadMore ? ' show less' : ' read more'}
+                                </span>
+                            )}
 
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,14 +8,14 @@ export const FAQElement = (props) => {
     }
 
     return (
-        <div className="flex flex-col items-start relative self-stretch w-full rounded-[20px]  border-2 border-solid border-[#f7f7f7]">
-            <div className="flex items-center justify-between p-[1rem]  relative self-stretch w-full  bg-[#f7f7f7] rounded-[20px_20px_0px_0px] transition-all duration-1000" >
-                <div className="relative max-w-[80%] min-w-[50%] [font-family:'Inter',Helvetica] font-medium text-black text-[1.4rem] tracking-[-1px] leading-[normal] cursor-pointer" onClick={(e) => { changeAnswerHandler(e) }}>
+        <div className="flex flex-col items-start relative self-stretch w-full rounded-[20px]  border border-solid border-[#6b6767b9] overflow-hidden">
+            <div className="flex items-center justify-between  relative self-stretch w-full  bg-[#f7f7f7]" >
+                <div className="relative max-w-[80%] min-w-[50%] [font-family:'Inter',Helvetica] font-medium text-black text-[1.4rem] tracking-[-1px] leading-[normal] cursor-pointer p-[1.5rem]" onClick={(e) => { changeAnswerHandler(e) }}>
                     {props.currQuestion.question}
                 </div>
 
 
-                <button className={` text-[2rem] font-bold ${show ? 'rotate-180' : 'rotate-90'}`} onClick={(e) => { changeAnswerHandler(e) }} > {`>`} </button>
+                <button className={` text-[2rem] font-bold px-[1.5rem] ${show ? 'rotate-180' : 'rotate-90'}`} onClick={(e) => { changeAnswerHandler(e) }} > {`>`} </button>
             </div>
 
             <div className={`flex items-start gap-[10px] p-[1rem] relative self-stretch w-full transition-all duration-1000 ${show ? "block" : "hidden"}`}>

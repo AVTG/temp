@@ -1,0 +1,32 @@
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import { Data } from '../../../Data';
+
+export const ImageGallery = () => {
+    return (
+        <div className=' w-11/12 mx-auto flex-col justify-center items-center  space-y-8'>
+            <div className="mx-auto [font-family:'Inter',Helvetica] font-black text-[#191919] text-[2.2rem] tracking-[-2.2px] leading-[normal] text-center">
+                Mementoes
+            </div>
+
+            <Slide indicators={true} arrows={window.innerWidth > 500} autoplay={true} pauseOnHover={true}>
+                {
+                    Data.SportsData.filter(object => {
+                        return object.id > 0
+                    }).map((object) => {
+                        return object.SportsImage.map((image, index) => {
+                            return (
+                                <div className="image-container w-[80%] aspect-[2/1] overflow-hidden object-fit pl-1 m-auto rounded-xl  backgroundSize: 'cover', backgroundPosition: 'center'">
+                                    <img src={image} alt={`slide-${index}`} className="object-fit object-center" />
+                                </div>
+                            )
+                        })
+                    }
+
+
+                    )}
+            </Slide>
+        </div>
+    )
+}
