@@ -1,7 +1,7 @@
 export const SportsData = [
     {
         id: 1,
-        image: "https://hdqwalls.com/download/basketball-hd-2048x1152.jpg",
+        image: "https://thumbs.dreamstime.com/b/basketball-black-background-11170232.jpg",
         eventName: "Udyatva 2023 - Basketball Tournament",
         sportsName: "Basketball",
         date: "March 25-27, 2023",
@@ -9,7 +9,7 @@ export const SportsData = [
     },
     {
         id: 2,
-        image: "https://th.bing.com/th/id/R.13c8f2270c8d9dfc5ae27e8c536b8926?rik=kD2rgchIvTFlFw&riu=http%3a%2f%2fwallpaperheart.com%2fwp-content%2fuploads%2f2018%2f04%2ffootball-player-kicking-the-ball-in-mid-air-HD-Football-Kick-Wallpapers.jpg&ehk=nLAvaS8uwyXQvtZC0g54LyRhpGhfZodPit7%2bcuADkgU%3d&risl=&pid=ImgRaw&r=0",
+        image: "https://th.bing.com/th/id/OIP.sHCieQnQ04qXxIzZ-AfSFwAAAA?rs=1&pid=ImgDetMain",
         eventName: "Udyatva 2024 - Football Championship",
         sportsName: "Football",
         date: "April 12-15, 2024",
