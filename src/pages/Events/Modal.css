@@ -1,4 +1,10 @@
-.modal-overlay {
+.custom-modal.active {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.custom-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,68 +16,72 @@
   align-items: center;
   z-index: 1000;
   overflow: hidden;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.modal-container {
-  background: #e8e8e8;
-  padding: 40px;
+.custom-popup {
+  background: white;
   border-radius: 15px;
-  max-width: 700px;
+  padding: 40px; /* Increased padding */
+  max-width: 90%; /* Increased max-width */
   width: 90%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  z-index: 1001;
+  max-height: 90vh;
+  overflow: auto;
   position: relative;
   background-size: cover;
   background-position: center;
-  overflow: auto; 
 }
 
 @media (max-width: 768px) {
-  .modal-container {
+  .custom-popup {
     padding: 20px;
     max-width: 90%;
     height: 90%; 
   }
 
-  .modal-header {
+  .custom-modal-header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .modal-body h2 {
+  .custom-modal-body h2 {
     font-size: 1.5rem;
   }
 
-  .modal-content {
+  .custom-modal-content {
     flex-direction: column;
   }
 
-  .modal-image-container {
+  .custom-modal-image-container {
     max-width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 
-  .modal-description {
+  .custom-modal-description {
     margin-left: 0;
   }
 
-  .modal-footer {
+  .custom-modal-footer {
     margin-top: 10px;
   }
 
-  .modal-close-button {
+  .custom-modal-close-button {
     font-size: 1rem;
   }
 }
 
-.modal-header {
+.custom-modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Increased margin-bottom */
 }
 
-.modal-close {
+.custom-modal-close {
   background: none;
   border: none;
   font-size: 2rem;
@@ -79,52 +89,60 @@
   color: #333;
 }
 
-.modal-body {
-  font-family: 'Inter', sans-serif;
+.custom-modal-body {
+  font-family: 'Inter', Helvetica, sans-serif;
 }
 
-.modal-body h2 {
-  font-size: 2.5rem;
+.custom-modal-body h2 {
+  font-size: 1.8rem; /* Decreased font size */
   font-weight: 700;
   color: #333;
-  margin-right: 20px;
+  text-align: center; /* Centered title */
+  margin-bottom: 20px;
 }
 
-.modal-content {
+.custom-modal-content {
   display: flex;
-  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.modal-image-container {
-  flex: 1;
-  max-width: 50%;
+.custom-modal-image-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.modal-image {
+.custom-modal-image {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
   border-radius: 10px;
 }
 
-.modal-description {
-  flex: 2;
-  margin-left: 20px;
+.custom-modal-description {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.modal-description p {
+.custom-modal-description p {
   color: #666;
   margin-bottom: 20px;
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-size: 1.35rem; /* Increased font size */
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin: 10px; /* Added margin */
 }
 
-.modal-footer {
+.custom-modal-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.modal-close-button {
+.custom-modal-close-button {
   padding: 10px 20px;
   background: black;
   color: white;
@@ -135,27 +153,27 @@
   cursor: pointer;
 }
 
-.modal-logo {
+.custom-modal-logo {
   display: flex;
   align-items: center;
 }
 
-.modal-logo img {
+.custom-modal-logo img {
   width: 65px;
   padding: 5px;
 }
 
-.modal-logo-text {
+.custom-modal-logo-text {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
-.modal-logo-subtext {
+.custom-modal-logo-subtext {
   font-weight: 600;
   font-size: 1.2rem;
-  tracking: 1.5px;
+  letter-spacing: 1.5px;
 }
