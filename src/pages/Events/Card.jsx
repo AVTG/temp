@@ -41,7 +41,7 @@ const Card = ({ eventName, description, image, event }) => {
             </figcaption>
           </figure>
           <div>
-            <h2 className="mb-4 text-3xl font-bold text-black-700">{eventName}</h2>
+            {/* <h2 className="mb-4 text-3xl font-bold text-black-700">{eventName}</h2> */}
             <p className="[font-family:'Inter-Regular',Helvetica] font-normal text-black text-[1.5rem] tracking-[-0.96px] leading-[normal]">
               {isReadMore ? description : `${description.substring(0, 200)}....`}
               <span

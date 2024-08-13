@@ -34,17 +34,7 @@ figure {
     transform: scale(1.2);
   }
 
-  .card:hover {
-    transform: translateY(-10px) rotate(2deg); /* Slight lift and rotation */
-  }
-  
-  .hover:transform-card:hover {
-    transform: translateY(-10px) rotate(2deg); /* Slight lift and rotation */
-  }
-  
-  .hover:transform-image:hover {
-    transform: scale(1.05); /* Slight zoom */
-  }
+ 
   
   figure img {
     transition: transform 0.3s ease-in-out;
