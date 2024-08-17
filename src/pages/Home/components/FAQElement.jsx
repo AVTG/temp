@@ -15,7 +15,7 @@ export const FAQElement = (props) => {
                 </div>
 
 
-                <button className={` text-[2rem] font-bold px-[1.5rem] ${show ? 'rotate-180' : 'rotate-90'}`} onClick={(e) => { changeAnswerHandler(e) }} > {`>`} </button>
+                <button className={` text-[2rem] font-bold px-[1.5rem] ${show ? 'rotate-90' : 'rotate-0'}`} onClick={(e) => { changeAnswerHandler(e) }} > {`>`} </button>
             </div>
 
             <div className={`flex items-start gap-[10px] p-[1rem] relative self-stretch w-full transition-all duration-1000 ${show ? "block" : "hidden"}`}>
