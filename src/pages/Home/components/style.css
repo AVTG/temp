@@ -71,3 +71,161 @@
     margin-top: 25px;
   }
 }
+
+.facility-card {
+  perspective: 1000px; /* Required for 3D flip */
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.facility-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.snip1566 {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  height: 200px; /* Ensure the card is square */
+  overflow: hidden; /* Hide anything outside the card */
+}
+
+.snip1566 img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Ensure image is circular */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.snip1566 .absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.snip1566 .transition-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.snip1566 .opacity-0 {
+  opacity: 0;
+}
+
+.snip1566 .opacity-100 {
+  opacity: 1;
+}
+
+.snip1566 .overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* Adjust size of the container */
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 3; /* Higher than the black fade */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out;
+  background-color: white; /* Solid white background for the overlay */
+}
+
+.snip1566:hover .overlay-container {
+  opacity: 1; /* Show overlay image on hover */
+}
+
+.snip1566 .overlay-image {
+  width: 80%; /* Adjust size for the overlay image */
+  height: 80%;
+  object-fit: cover; /* Ensure image covers the space */
+  border-radius: 50%; /* Circular overlay image */
+  z-index: 4; /* Ensure it's above everything */
+}
+
+.snip1566 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Black fade */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+  z-index: 2; /* Below the overlay image */
+}
+
+.snip1566:hover figcaption {
+  opacity: 1;
+}
+
+.snip1566 img:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.snip1566 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+}
+
+/* Semicircle Arc Effects (Top-Left and Bottom-Right Only) */
+.snip1566::before,
+.snip1566::after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  border: 4px solid #bbb; /* Visible initial border */
+  z-index: 1;
+  opacity: 0; /* Initially hidden */
+  transition: all 0.5s ease-in-out;
+}
+
+.snip1566::before {
+  top: -5%; /* Closer to the card */
+  left: -5%; /* Closer to the card */
+  border-right-color: transparent;
+  border-bottom-color: transparent; /* Hide bottom and right borders */
+}
+
+.snip1566::after {
+  bottom: -5%; /* Closer to the card */
+  right: -5%; /* Closer to the card */
+  border-left-color: transparent;
+  border-top-color: transparent; /* Hide top and left borders */
+}
+
+.snip1566:hover::before,
+.snip1566:hover::after {
+  opacity: 1; /* Show semicircles */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-color: black;
+  transform: rotate(45deg); /* Rotate for the loading effect */
+}
