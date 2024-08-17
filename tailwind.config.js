@@ -10,7 +10,10 @@ module.exports = {
       },
       screens: {
         'navbar' : '800px' ,
-      }
+      },
+      transform: {
+        'scale-x-[-1]': 'scaleX(-1)',
+      },
 
     },
   },
