@@ -128,6 +128,20 @@ import TT5 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/T
 import TT6 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT6.JPG";
 import TT7 from "./assets/OfficeBearer_SportsPage/SportsPageImages/TableTennis/TT7.JPG";
 
+//overlayed imager for sports program
+
+import tt from "./assets/overlayProg/tt.jpg"
+import athle from "./assets/overlayProg/athletics.jpg"
+import racket from "./assets/overlayProg/badminton.jpg"
+import cric from "./assets/overlayProg/cricket.jpg"
+import foot from "./assets/overlayProg/foot.jpg"
+import kabbadi from "./assets/overlayProg/kabbadi.jpg"
+import marialArts from "./assets/overlayProg/martialArts.jpg"
+import volly from "./assets/overlayProg/volleyball.jpg"
+import e_sport from "./assets/overlayProg/e_sport.jpg"
+import board from "./assets/overlayProg/board.jpg"
+import handbowl from "./assets/overlayProg/handball.jpg"
+
 
 
 
@@ -377,8 +391,9 @@ export const Data = {
                     position: "Club-Secretary",
                     image: badminton1,
                     mobno: "9664468638"
-                },
+                },               
             ],
+            overlayImg : racket,
 
             tenet: {
                 Quote: "In badminton, as in life, it's not about how many times you fall, but how many times you rise and keep going.",
@@ -407,6 +422,8 @@ export const Data = {
                     mobno: "7651915054"
                 },
             ],
+
+            overlayImg : tt,
 
             tenet: {
                 Quote: "Table tennis is a symphony of motion, a dance of the mind and body. Every stroke is a note, every rally a melody",
@@ -439,6 +456,7 @@ export const Data = {
                     mobno: "8638247075"
                 },
             ],
+            overlayImg : foot,
 
 
             tenet: {
@@ -470,6 +488,7 @@ export const Data = {
                     mobno: "9404499042"
                 },
             ],
+            overlayImg : athle,
 
             tenet: {
                 Quote: "When you run the marathon, you run against the distance, not against the other runners and not against the time.",
@@ -509,6 +528,7 @@ export const Data = {
                     mobno: "8688877341"
                 },
             ],
+            overlayImg : kabbadi,
 
             tenet: {
                 Quote: "In Kabaddi, every raid is a new opportunity. It's about taking risks and making quick decisions.",
@@ -538,6 +558,7 @@ export const Data = {
                     mobno: "7205946730"
                 },
             ],
+            overlayImg : volly,
 
             tenet: {
                 Quote: "In team sports, the team with the best individuals doesn't win! it's the players with the best team that succeeds.",
@@ -573,6 +594,7 @@ export const Data = {
                     mobno: "6378319438"
                 },
             ],
+            overlayImg : cric,
 
             tenet: {
                 Quote: "A hundred or a fifty is just the number, but what really matters is the team goals and the team contributions.",
@@ -607,6 +629,7 @@ export const Data = {
                     mobno: "9694214669"
                 },
             ],
+            overlayImg: handbowl,
 
             tenet: {
                 Quote: "",
@@ -634,6 +657,7 @@ export const Data = {
                     mobno: "7206626781"
                 },
             ],
+            overlayImg : marialArts,
 
             tenet: {
                 Quote: "The key to immortality is first living a life worth remembering.",
@@ -658,6 +682,7 @@ export const Data = {
                     mobno: "9307124243"
                 },
             ],
+            overlayImg : board,
 
             tenet: {
                 Quote: "Board games are a test of skill, patience, and foresight, where success hinges on cunning tactics and calculated risks",
@@ -688,6 +713,7 @@ export const Data = {
                     mobno: "9256857504"
                 },
             ],
+            overlayImg : e_sport,
 
             tenet: {
                 Quote: "Winning isn't everything, but it's definitely the main goal.",
